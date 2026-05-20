@@ -1,14 +1,8 @@
 # NYC-Taxi-Trip-
 AI-Powered Modern Data Engineering Pipeline
 
-NYC Taxi CSV/Parquet ->
-Python Ingestion Layer ->
-DuckDB Data Warehouse ->
-Great Expectations Validation ->
-dbt Transformations ->
-Dagster Orchestration ->
-AI Layer (OpenAI/Claude) ->
-Analytics + Dashboard
+<img width="1472" height="1480" alt="image" src="https://github.com/user-attachments/assets/70b80823-5aae-4274-ad1d-e0c9631dc06c" />
+
 
 1. pip install duckdb pandas pyarrow
 working principle:
