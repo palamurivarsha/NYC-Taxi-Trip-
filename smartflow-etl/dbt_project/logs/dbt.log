@@ -1,0 +1,3031 @@
+[0m14:44:38.847042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8B636900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8DB27D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8DB27750>]}
+
+
+============================== 14:44:39.149929 | 234bfe79-adf6-42bd-b1dd-b6e4366cb4fa ==============================
+[0m14:44:39.149929 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:44:39.151906 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir . --select stg_taxi_trips fct_trips daily_metrics', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\varsh\\OneDrive\\Desktop\\smartflow-etl\\dbt_project\\logs'}
+[0m14:44:40.652791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8BD38180>]}
+[0m14:44:40.907527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8DAC9150>]}
+[0m14:44:40.948485 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:44:41.860852 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:44:41.864952 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:44:41.866138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8DB99050>]}
+[0m14:44:49.082451 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'fct_trips' in
+package 'smartflow' (models\marts\schema.yml). Arguments to generic tests should
+be nested under the `arguments` property.
+[0m14:44:49.084122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8DEFD310>]}
+[0m14:44:49.947824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F5AA430>]}
+[0m14:44:50.200594 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m14:44:50.270893 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m14:44:50.696917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8DF92750>]}
+[0m14:44:50.699030 [info ] [MainThread]: Found 3 models, 26 data tests, 1 source, 485 macros
+[0m14:44:50.700551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F6C4D10>]}
+[0m14:44:50.707292 [info ] [MainThread]: 
+[0m14:44:50.708941 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:44:50.709962 [info ] [MainThread]: 
+[0m14:44:50.711433 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:44:50.724606 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m14:44:50.747892 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m14:44:50.765931 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m14:44:59.536726 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m14:44:59.538292 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m14:44:59.539621 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m14:44:59.540714 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m14:44:59.541692 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m14:44:59.542534 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m14:44:59.543342 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:59.544042 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:59.544774 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:59.640732 [debug] [ThreadPool]: SQL status: OK in 0.097 seconds
+[0m14:44:59.642189 [debug] [ThreadPool]: SQL status: OK in 0.098 seconds
+[0m14:44:59.643145 [debug] [ThreadPool]: SQL status: OK in 0.098 seconds
+[0m14:44:59.648279 [debug] [ThreadPool]: On list_smartflow: Close
+[0m14:44:59.651422 [debug] [ThreadPool]: On list_smartflow: Close
+[0m14:44:59.654922 [debug] [ThreadPool]: On list_smartflow: Close
+[0m14:44:59.659102 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_staging)
+[0m14:44:59.660363 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_metrics)
+[0m14:44:59.662608 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_staging"
+"
+[0m14:44:59.663894 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_marts)
+[0m14:44:59.665582 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_metrics"
+"
+[0m14:44:59.683145 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:44:59.684849 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_marts"
+"
+[0m14:44:59.691875 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:44:59.694292 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m14:44:59.699550 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:44:59.700817 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m14:44:59.701637 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:44:59.702398 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m14:44:59.703425 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:44:59.705111 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:44:59.707931 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m14:44:59.709423 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m14:44:59.710644 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:44:59.714652 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:44:59.718263 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:44:59.721593 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:44:59.723066 [debug] [ThreadPool]: On create_smartflow_main_staging: BEGIN
+[0m14:44:59.724168 [debug] [ThreadPool]: On create_smartflow_main_metrics: BEGIN
+[0m14:44:59.725195 [debug] [ThreadPool]: On create_smartflow_main_marts: BEGIN
+[0m14:44:59.727269 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:44:59.728278 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:44:59.729097 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_staging"
+    
+[0m14:44:59.731921 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:44:59.732810 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:44:59.733556 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m14:44:59.734403 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m14:44:59.735103 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_marts"
+    
+[0m14:44:59.737260 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m14:44:59.738314 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:44:59.739805 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:44:59.740690 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_metrics"
+    
+[0m14:44:59.741375 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m14:44:59.742335 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:44:59.745809 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m14:44:59.746989 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:44:59.747941 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:44:59.748928 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m14:44:59.751485 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m14:44:59.752369 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m14:44:59.754025 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:44:59.755185 [debug] [ThreadPool]: On create_smartflow_main_staging: Close
+[0m14:44:59.756059 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m14:44:59.758091 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:44:59.759211 [debug] [ThreadPool]: On create_smartflow_main_marts: Close
+[0m14:44:59.761383 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m14:44:59.762335 [debug] [ThreadPool]: On create_smartflow_main_metrics: Close
+[0m14:44:59.766548 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_staging'
+[0m14:44:59.773372 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_metrics'
+[0m14:44:59.781915 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m14:44:59.789245 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m14:44:59.790876 [debug] [ThreadPool]: On list_smartflow_main_staging: BEGIN
+[0m14:44:59.792356 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_marts'
+[0m14:44:59.793253 [debug] [ThreadPool]: On list_smartflow_main_metrics: BEGIN
+[0m14:44:59.794300 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:59.798794 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m14:44:59.799812 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:59.801330 [debug] [ThreadPool]: On list_smartflow_main_marts: BEGIN
+[0m14:44:59.802750 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m14:44:59.803751 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:59.804703 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:44:59.805407 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m14:44:59.806413 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m14:44:59.807319 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m14:44:59.808119 [debug] [ThreadPool]: On list_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_staging"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_staging'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m14:44:59.808732 [debug] [ThreadPool]: On list_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_metrics"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_metrics'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m14:44:59.809346 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m14:44:59.810813 [debug] [ThreadPool]: On list_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_marts"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_marts'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m14:44:59.833001 [debug] [ThreadPool]: SQL status: OK in 0.021 seconds
+[0m14:44:59.834810 [debug] [ThreadPool]: SQL status: OK in 0.024 seconds
+[0m14:44:59.836834 [debug] [ThreadPool]: SQL status: OK in 0.026 seconds
+[0m14:44:59.839448 [debug] [ThreadPool]: On list_smartflow_main_marts: ROLLBACK
+[0m14:44:59.842777 [debug] [ThreadPool]: On list_smartflow_main_staging: ROLLBACK
+[0m14:44:59.846051 [debug] [ThreadPool]: On list_smartflow_main_metrics: ROLLBACK
+[0m14:44:59.849928 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_marts'
+[0m14:44:59.851580 [debug] [ThreadPool]: On list_smartflow_main_marts: Close
+[0m14:44:59.853245 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_staging'
+[0m14:44:59.854661 [debug] [ThreadPool]: On list_smartflow_main_staging: Close
+[0m14:44:59.855840 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_metrics'
+[0m14:44:59.856889 [debug] [ThreadPool]: On list_smartflow_main_metrics: Close
+[0m14:44:59.858847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F711020>]}
+[0m14:44:59.860100 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:44:59.860810 [debug] [MainThread]: On master: BEGIN
+[0m14:44:59.861519 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:44:59.863034 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:44:59.863785 [debug] [MainThread]: On master: COMMIT
+[0m14:44:59.864440 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:44:59.865231 [debug] [MainThread]: On master: COMMIT
+[0m14:44:59.866643 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:44:59.867392 [debug] [MainThread]: On master: Close
+[0m14:44:59.947306 [debug] [Thread-1 (]: Began running node model.smartflow.stg_taxi_trips
+[0m14:44:59.949075 [info ] [Thread-1 (]: 1 of 3 START sql view model main_staging.stg_taxi_trips ........................ [RUN]
+[0m14:44:59.951267 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.smartflow.stg_taxi_trips'
+[0m14:44:59.952531 [debug] [Thread-1 (]: Began compiling node model.smartflow.stg_taxi_trips
+[0m14:44:59.974804 [debug] [Thread-1 (]: Writing injected SQL for node "model.smartflow.stg_taxi_trips"
+[0m14:44:59.983169 [debug] [Thread-1 (]: Began executing node model.smartflow.stg_taxi_trips
+[0m14:45:00.062558 [debug] [Thread-1 (]: Writing runtime sql for node "model.smartflow.stg_taxi_trips"
+[0m14:45:00.069248 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m14:45:00.070499 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: BEGIN
+[0m14:45:00.071139 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:45:00.073016 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:45:00.074000 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m14:45:00.075530 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+  
+  create view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" as (
+    
+
+/*
+  stg_taxi_trips
+  ──────────────
+  Source : raw.taxi_trips_mapped  (AI-schema-mapped layer)
+  Purpose: Clean, cast, validate, and enrich raw taxi trips.
+
+  What this model does:
+    1. Casts every column to its correct type
+    2. Derives useful fields (trip_duration_mins, hour_of_day, day_of_week, etc.)
+    3. Maps coded values to human-readable labels (payment_type, vendor)
+    4. Flags bad rows instead of dropping them (anomaly pipeline reads these flags)
+    5. Applies soft filters — only truly unrecoverable rows are excluded
+*/
+
+with
+
+source as (
+    select * from "smartflow"."raw"."taxi_trips_mapped"
+),
+
+casted as (
+    select
+        -- ── Identifiers ──────────────────────────────────────────────────
+        cast(vendor_id       as integer)  as vendor_id,
+        cast(rate_code_id    as integer)  as rate_code_id,
+        cast(payment_type    as integer)  as payment_type,
+
+        -- ── Timestamps ───────────────────────────────────────────────────
+        cast(pickup_datetime  as timestamp) as pickup_datetime,
+        cast(dropoff_datetime as timestamp) as dropoff_datetime,
+
+        -- ── Dimensions ───────────────────────────────────────────────────
+        cast(passenger_count      as integer) as passenger_count,
+        cast(pickup_location_id   as integer) as pickup_location_id,
+        cast(dropoff_location_id  as integer) as dropoff_location_id,
+        cast(store_and_fwd_flag   as varchar) as store_and_fwd_flag,
+
+        -- ── Financials ───────────────────────────────────────────────────
+        cast(fare_amount         as double) as fare_amount,
+        cast(tip_amount          as double) as tip_amount,
+        cast(total_amount        as double) as total_amount,
+        cast(congestion_surcharge as double) as congestion_surcharge,
+        cast(airport_fee         as double) as airport_fee,
+
+        -- ── Distances ────────────────────────────────────────────────────
+        cast(trip_distance as double) as trip_distance
+
+    from source
+),
+
+enriched as (
+    select
+        *,
+
+        -- ── Derived time fields ──────────────────────────────────────────
+        round(
+            datediff('minute', pickup_datetime, dropoff_datetime)
+        , 1)                                             as trip_duration_mins,
+
+        extract(hour  from pickup_datetime)              as pickup_hour,
+        extract(dow   from pickup_datetime)              as pickup_day_of_week,
+        -- 0=Sun, 1=Mon ... 6=Sat
+        case extract(dow from pickup_datetime)
+            when 0 then 'Sunday'
+            when 1 then 'Monday'
+            when 2 then 'Tuesday'
+            when 3 then 'Wednesday'
+            when 4 then 'Thursday'
+            when 5 then 'Friday'
+            when 6 then 'Saturday'
+        end                                              as pickup_day_name,
+
+        case
+            when extract(hour from pickup_datetime) between 6  and 11 then 'Morning'
+            when extract(hour from pickup_datetime) between 12 and 16 then 'Afternoon'
+            when extract(hour from pickup_datetime) between 17 and 20 then 'Evening'
+            else 'Night'
+        end                                              as time_of_day,
+
+        -- ── Human-readable labels ────────────────────────────────────────
+        case vendor_id
+            when 1 then 'Creative Mobile Technologies'
+            when 2 then 'VeriFone Inc'
+            else        'Unknown Vendor'
+        end                                              as vendor_name,
+
+        case payment_type
+            when 1 then 'Credit Card'
+            when 2 then 'Cash'
+            when 3 then 'No Charge'
+            when 4 then 'Dispute'
+            else        'Unknown'
+        end                                              as payment_type_label,
+
+        case rate_code_id
+            when 1 then 'Standard Rate'
+            when 2 then 'JFK'
+            when 3 then 'Newark'
+            when 4 then 'Nassau/Westchester'
+            when 5 then 'Negotiated Fare'
+            when 6 then 'Group Ride'
+            else        'Unknown Rate'
+        end                                              as rate_code_label,
+
+        -- ── Data quality flags (1 = problem detected) ────────────────────
+        case when fare_amount    < 0                then 1 else 0 end
+                                                         as flag_negative_fare,
+        case when total_amount   = 0                then 1 else 0 end
+                                                         as flag_zero_total,
+        case when trip_distance  > 500              then 1 else 0 end
+                                                         as flag_impossible_distance,
+        case when passenger_count is null
+              or passenger_count  = 0               then 1 else 0 end
+                                                         as flag_bad_passenger_count,
+        case when payment_type   = 99               then 1 else 0 end
+                                                         as flag_unknown_payment,
+        case when dropoff_datetime <= pickup_datetime then 1 else 0 end
+                                                         as flag_invalid_timestamps,
+
+        -- ── Composite is_anomaly flag (any flag set) ─────────────────────
+        case when
+            (case when fare_amount    < 0                then 1 else 0 end) +
+            (case when total_amount   = 0                then 1 else 0 end) +
+            (case when trip_distance  > 500              then 1 else 0 end) +
+            (case when passenger_count is null
+                  or passenger_count  = 0               then 1 else 0 end) +
+            (case when payment_type   = 99               then 1 else 0 end) +
+            (case when dropoff_datetime <= pickup_datetime then 1 else 0 end)
+            > 0
+        then 1 else 0 end                                as is_anomaly,
+
+        -- ── Tip percentage ───────────────────────────────────────────────
+        case
+            when fare_amount > 0
+            then round(tip_amount / fare_amount * 100, 2)
+            else null
+        end                                              as tip_pct
+
+    from casted
+),
+
+final as (
+    select
+        *,
+        -- ── Record metadata ──────────────────────────────────────────────
+        current_timestamp                                as _loaded_at,
+        'raw.taxi_trips_mapped'                          as _source_table
+    from enriched
+
+    -- Only exclude truly unrecoverable rows:
+    -- trips where pickup = dropoff location AND duration = 0 AND fare = 0
+    where not (
+        pickup_location_id  = dropoff_location_id
+        and trip_duration_mins = 0
+        and fare_amount        = 0
+    )
+)
+
+select * from final
+  );
+
+[0m14:45:00.101823 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m14:45:00.103837 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+  
+  create view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" as (
+    
+
+/*
+  stg_taxi_trips
+  ──────────────
+  Source : raw.taxi_trips_mapped  (AI-schema-mapped layer)
+  Purpose: Clean, cast, validate, and enrich raw taxi trips.
+
+  What this model does:
+    1. Casts every column to its correct type
+    2. Derives useful fields (trip_duration_mins, hour_of_day, day_of_week, etc.)
+    3. Maps coded values to human-readable labels (payment_type, vendor)
+    4. Flags bad rows instead of dropping them (anomaly pipeline reads these flags)
+    5. Applies soft filters — only truly unrecoverable rows are excluded
+*/
+
+with
+
+source as (
+    select * from "smartflow"."raw"."taxi_trips_mapped"
+),
+
+casted as (
+    select
+        -- ── Identifiers ──────────────────────────────────────────────────
+        cast(vendor_id       as integer)  as vendor_id,
+        cast(rate_code_id    as integer)  as rate_code_id,
+        cast(payment_type    as integer)  as payment_type,
+
+        -- ── Timestamps ───────────────────────────────────────────────────
+        cast(pickup_datetime  as timestamp) as pickup_datetime,
+        cast(dropoff_datetime as timestamp) as dropoff_datetime,
+
+        -- ── Dimensions ───────────────────────────────────────────────────
+        cast(passenger_count      as integer) as passenger_count,
+        cast(pickup_location_id   as integer) as pickup_location_id,
+        cast(dropoff_location_id  as integer) as dropoff_location_id,
+        cast(store_and_fwd_flag   as varchar) as store_and_fwd_flag,
+
+        -- ── Financials ───────────────────────────────────────────────────
+        cast(fare_amount         as double) as fare_amount,
+        cast(tip_amount          as double) as tip_amount,
+        cast(total_amount        as double) as total_amount,
+        cast(congestion_surcharge as double) as congestion_surcharge,
+        cast(airport_fee         as double) as airport_fee,
+
+        -- ── Distances ────────────────────────────────────────────────────
+        cast(trip_distance as double) as trip_distance
+
+    from source
+),
+
+enriched as (
+    select
+        *,
+
+        -- ── Derived time fields ──────────────────────────────────────────
+        round(
+            datediff('minute', pickup_datetime, dropoff_datetime)
+        , 1)                                             as trip_duration_mins,
+
+        extract(hour  from pickup_datetime)              as pickup_hour,
+        extract(dow   from pickup_datetime)              as pickup_day_of_week,
+        -- 0=Sun, 1=Mon ... 6=Sat
+        case extract(dow from pickup_datetime)
+            when 0 then 'Sunday'
+            when 1 then 'Monday'
+            when 2 then 'Tuesday'
+            when 3 then 'Wednesday'
+            when 4 then 'Thursday'
+            when 5 then 'Friday'
+            when 6 then 'Saturday'
+        end                                              as pickup_day_name,
+
+        case
+            when extract(hour from pickup_datetime) between 6  and 11 then 'Morning'
+            when extract(hour from pickup_datetime) between 12 and 16 then 'Afternoon'
+            when extract(hour from pickup_datetime) between 17 and 20 then 'Evening'
+            else 'Night'
+        end                                              as time_of_day,
+
+        -- ── Human-readable labels ────────────────────────────────────────
+        case vendor_id
+            when 1 then 'Creative Mobile Technologies'
+            when 2 then 'VeriFone Inc'
+            else        'Unknown Vendor'
+        end                                              as vendor_name,
+
+        case payment_type
+            when 1 then 'Credit Card'
+            when 2 then 'Cash'
+            when 3 then 'No Charge'
+            when 4 then 'Dispute'
+            else        'Unknown'
+        end                                              as payment_type_label,
+
+        case rate_code_id
+            when 1 then 'Standard Rate'
+            when 2 then 'JFK'
+            when 3 then 'Newark'
+            when 4 then 'Nassau/Westchester'
+            when 5 then 'Negotiated Fare'
+            when 6 then 'Group Ride'
+            else        'Unknown Rate'
+        end                                              as rate_code_label,
+
+        -- ── Data quality flags (1 = problem detected) ────────────────────
+        case when fare_amount    < 0                then 1 else 0 end
+                                                         as flag_negative_fare,
+        case when total_amount   = 0                then 1 else 0 end
+                                                         as flag_zero_total,
+        case when trip_distance  > 500              then 1 else 0 end
+                                                         as flag_impossible_distance,
+        case when passenger_count is null
+              or passenger_count  = 0               then 1 else 0 end
+                                                         as flag_bad_passenger_count,
+        case when payment_type   = 99               then 1 else 0 end
+                                                         as flag_unknown_payment,
+        case when dropoff_datetime <= pickup_datetime then 1 else 0 end
+                                                         as flag_invalid_timestamps,
+
+        -- ── Composite is_anomaly flag (any flag set) ─────────────────────
+        case when
+            (case when fare_amount    < 0                then 1 else 0 end) +
+            (case when total_amount   = 0                then 1 else 0 end) +
+            (case when trip_distance  > 500              then 1 else 0 end) +
+            (case when passenger_count is null
+                  or passenger_count  = 0               then 1 else 0 end) +
+            (case when payment_type   = 99               then 1 else 0 end) +
+            (case when dropoff_datetime <= pickup_datetime then 1 else 0 end)
+            > 0
+        then 1 else 0 end                                as is_anomaly,
+
+        -- ── Tip percentage ───────────────────────────────────────────────
+        case
+            when fare_amount > 0
+            then round(tip_amount / fare_amount * 100, 2)
+            else null
+        end                                              as tip_pct
+
+    from casted
+),
+
+final as (
+    select
+        *,
+        -- ── Record metadata ──────────────────────────────────────────────
+        current_timestamp                                as _loaded_at,
+        'raw.taxi_trips_mapped'                          as _source_table
+    from enriched
+
+    -- Only exclude truly unrecoverable rows:
+    -- trips where pickup = dropoff location AND duration = 0 AND fare = 0
+    where not (
+        pickup_location_id  = dropoff_location_id
+        and trip_duration_mins = 0
+        and fare_amount        = 0
+    )
+)
+
+select * from final
+  );
+
+[0m14:45:00.105979 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:45:00.107183 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: ROLLBACK
+[0m14:45:00.113169 [debug] [Thread-1 (]: Failed to rollback 'model.smartflow.stg_taxi_trips'
+[0m14:45:00.114925 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: Close
+[0m14:45:00.131216 [debug] [Thread-1 (]: Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m14:45:00.162592 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '234bfe79-adf6-42bd-b1dd-b6e4366cb4fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8BAA3110>]}
+[0m14:45:00.165027 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model main_staging.stg_taxi_trips ............... [[31mERROR[0m in 0.18s]
+[0m14:45:00.167023 [debug] [Thread-1 (]: Finished running node model.smartflow.stg_taxi_trips
+[0m14:45:00.168557 [debug] [Thread-7 (]: Marking all children of 'model.smartflow.stg_taxi_trips' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined.
+[0m14:45:00.172752 [debug] [Thread-2 (]: Began running node model.smartflow.fct_trips
+[0m14:45:00.174412 [info ] [Thread-2 (]: 2 of 3 SKIP relation main_marts.fct_trips ...................................... [[33mSKIP[0m]
+[0m14:45:00.175939 [debug] [Thread-2 (]: Finished running node model.smartflow.fct_trips
+[0m14:45:00.179226 [debug] [Thread-3 (]: Began running node model.smartflow.daily_metrics
+[0m14:45:00.180679 [info ] [Thread-3 (]: 3 of 3 SKIP relation main_metrics.daily_metrics ................................ [[33mSKIP[0m]
+[0m14:45:00.182191 [debug] [Thread-3 (]: Finished running node model.smartflow.daily_metrics
+[0m14:45:00.186245 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:00.187629 [debug] [MainThread]: On master: BEGIN
+[0m14:45:00.188520 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:45:00.190539 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m14:45:00.191566 [debug] [MainThread]: On master: COMMIT
+[0m14:45:00.192697 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:00.193334 [debug] [MainThread]: On master: COMMIT
+[0m14:45:00.194792 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:45:00.195459 [debug] [MainThread]: On master: Close
+[0m14:45:00.196480 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:45:00.197362 [debug] [MainThread]: Connection 'create_smartflow_main_marts' was properly closed.
+[0m14:45:00.198091 [debug] [MainThread]: Connection 'create_smartflow_main_metrics' was properly closed.
+[0m14:45:00.198611 [debug] [MainThread]: Connection 'create_smartflow_main_staging' was properly closed.
+[0m14:45:00.199100 [debug] [MainThread]: Connection 'list_smartflow_main_staging' was properly closed.
+[0m14:45:00.199717 [debug] [MainThread]: Connection 'list_smartflow_main_metrics' was properly closed.
+[0m14:45:00.200127 [debug] [MainThread]: Connection 'list_smartflow_main_marts' was properly closed.
+[0m14:45:00.200487 [debug] [MainThread]: Connection 'model.smartflow.stg_taxi_trips' was properly closed.
+[0m14:45:00.201351 [info ] [MainThread]: 
+[0m14:45:00.202607 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 9.49 seconds (9.49s).
+[0m14:45:00.204503 [debug] [MainThread]: Command end result
+[0m14:45:00.297543 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m14:45:00.305234 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m14:45:00.321314 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\run_results.json
+[0m14:45:00.322326 [info ] [MainThread]: 
+[0m14:45:00.323374 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:45:00.324260 [info ] [MainThread]: 
+[0m14:45:00.325331 [error] [MainThread]: [31mFailure in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)[0m
+[0m14:45:00.326287 [error] [MainThread]:   Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m14:45:00.327013 [info ] [MainThread]: 
+[0m14:45:00.328220 [info ] [MainThread]:   compiled code at target\compiled\smartflow\models\staging\stg_taxi_trips.sql
+[0m14:45:00.329106 [info ] [MainThread]: 
+[0m14:45:00.329785 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m14:45:00.330984 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 9 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:45:00.333944 [debug] [MainThread]: Command `dbt run` failed at 14:45:00.333444 after 21.93 seconds
+[0m14:45:00.335405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8BA27250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8BAB1DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8DADE6D0>]}
+[0m14:45:00.336558 [debug] [MainThread]: Flushing usage events
+[0m14:45:02.518901 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:45:48.454446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CE9CF0830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEBE47C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEBE47890>]}
+
+
+============================== 14:45:48.467291 | 563464a5-dc49-41ab-b42a-de09f793c48b ==============================
+[0m14:45:48.467291 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:45:48.468442 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --profiles-dir . --select stg_taxi_trips fct_trips daily_metrics', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\varsh\\OneDrive\\Desktop\\smartflow-etl\\dbt_project\\logs'}
+[0m14:45:49.295437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '563464a5-dc49-41ab-b42a-de09f793c48b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEA161BA0>]}
+[0m14:45:49.534496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '563464a5-dc49-41ab-b42a-de09f793c48b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEACE7130>]}
+[0m14:45:49.542315 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:45:50.348093 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:45:50.786844 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:45:50.788126 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:45:50.788998 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:45:50.920017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '563464a5-dc49-41ab-b42a-de09f793c48b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEBF6B250>]}
+[0m14:45:51.402038 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m14:45:51.411509 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m14:45:51.462014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '563464a5-dc49-41ab-b42a-de09f793c48b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEC475040>]}
+[0m14:45:51.463646 [info ] [MainThread]: Found 3 models, 26 data tests, 1 source, 485 macros
+[0m14:45:51.464703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '563464a5-dc49-41ab-b42a-de09f793c48b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEC19D390>]}
+[0m14:45:51.471582 [info ] [MainThread]: 
+[0m14:45:51.472866 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:45:51.473735 [info ] [MainThread]: 
+[0m14:45:51.475251 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:45:51.489240 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m14:45:51.508235 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m14:45:51.525429 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m14:45:51.712838 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m14:45:51.714023 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m14:45:51.715342 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m14:45:51.716077 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m14:45:51.716746 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m14:45:51.717344 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:51.718016 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m14:45:51.718996 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:51.720422 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:51.798586 [debug] [ThreadPool]: SQL status: OK in 0.078 seconds
+[0m14:45:51.800485 [debug] [ThreadPool]: SQL status: OK in 0.083 seconds
+[0m14:45:51.804587 [debug] [ThreadPool]: On list_smartflow: Close
+[0m14:45:51.805542 [debug] [ThreadPool]: SQL status: OK in 0.086 seconds
+[0m14:45:51.809831 [debug] [ThreadPool]: On list_smartflow: Close
+[0m14:45:51.813022 [debug] [ThreadPool]: On list_smartflow: Close
+[0m14:45:51.815323 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_metrics)
+[0m14:45:51.816156 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_staging)
+[0m14:45:51.817063 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_metrics"
+"
+[0m14:45:51.817812 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_marts)
+[0m14:45:51.819133 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_staging"
+"
+[0m14:45:51.837165 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:45:51.839264 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_marts"
+"
+[0m14:45:51.845695 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:45:51.847181 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m14:45:51.852253 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:45:51.853629 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m14:45:51.854677 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:45:51.855681 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m14:45:51.856537 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:45:51.858073 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:45:51.860049 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:45:51.861339 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:45:51.864669 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:45:51.865364 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m14:45:51.866371 [debug] [ThreadPool]: On create_smartflow_main_metrics: BEGIN
+[0m14:45:51.869638 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:45:51.873095 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:45:51.874689 [debug] [ThreadPool]: On create_smartflow_main_marts: BEGIN
+[0m14:45:51.875812 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:45:51.876602 [debug] [ThreadPool]: On create_smartflow_main_staging: BEGIN
+[0m14:45:51.877541 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:45:51.878493 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:45:51.879709 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_metrics"
+    
+[0m14:45:51.880707 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:45:51.881930 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:45:51.882743 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_marts"
+    
+[0m14:45:51.883598 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:45:51.884483 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:45:51.885600 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_staging"
+    
+[0m14:45:51.888206 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m14:45:51.889186 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m14:45:51.890261 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m14:45:51.892370 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m14:45:51.893239 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:45:51.894119 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m14:45:51.894959 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m14:45:51.897135 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m14:45:51.898747 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m14:45:51.899643 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m14:45:51.900327 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:45:51.901484 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m14:45:51.902456 [debug] [ThreadPool]: On create_smartflow_main_metrics: Close
+[0m14:45:51.903256 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:45:51.905449 [debug] [ThreadPool]: On create_smartflow_main_marts: Close
+[0m14:45:51.906817 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m14:45:51.907824 [debug] [ThreadPool]: On create_smartflow_main_staging: Close
+[0m14:45:51.912343 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_staging'
+[0m14:45:51.926277 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m14:45:51.927986 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_marts'
+[0m14:45:51.929193 [debug] [ThreadPool]: On list_smartflow_main_staging: BEGIN
+[0m14:45:51.935939 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m14:45:51.937811 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_metrics'
+[0m14:45:51.938855 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:51.940007 [debug] [ThreadPool]: On list_smartflow_main_marts: BEGIN
+[0m14:45:51.945067 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m14:45:51.946703 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:51.947792 [debug] [ThreadPool]: On list_smartflow_main_metrics: BEGIN
+[0m14:45:51.948664 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m14:45:51.949870 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:51.950990 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m14:45:51.951935 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:45:51.953414 [debug] [ThreadPool]: On list_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_staging"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_staging'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m14:45:51.954572 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m14:45:51.955496 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m14:45:51.957068 [debug] [ThreadPool]: On list_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_marts"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_marts'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m14:45:51.957658 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m14:45:51.958669 [debug] [ThreadPool]: On list_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_metrics"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_metrics'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m14:45:51.966061 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m14:45:51.967220 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m14:45:51.968396 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m14:45:51.972304 [debug] [ThreadPool]: On list_smartflow_main_metrics: ROLLBACK
+[0m14:45:51.975174 [debug] [ThreadPool]: On list_smartflow_main_marts: ROLLBACK
+[0m14:45:51.978263 [debug] [ThreadPool]: On list_smartflow_main_staging: ROLLBACK
+[0m14:45:51.982278 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_metrics'
+[0m14:45:51.983589 [debug] [ThreadPool]: On list_smartflow_main_metrics: Close
+[0m14:45:51.985435 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_marts'
+[0m14:45:51.986950 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_staging'
+[0m14:45:51.988555 [debug] [ThreadPool]: On list_smartflow_main_marts: Close
+[0m14:45:51.989591 [debug] [ThreadPool]: On list_smartflow_main_staging: Close
+[0m14:45:51.992443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '563464a5-dc49-41ab-b42a-de09f793c48b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEC904AE0>]}
+[0m14:45:51.993841 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:51.994637 [debug] [MainThread]: On master: BEGIN
+[0m14:45:51.995316 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:45:51.997288 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m14:45:51.998151 [debug] [MainThread]: On master: COMMIT
+[0m14:45:51.998972 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:51.999699 [debug] [MainThread]: On master: COMMIT
+[0m14:45:52.001141 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:45:52.001964 [debug] [MainThread]: On master: Close
+[0m14:45:52.015515 [debug] [Thread-1 (]: Began running node model.smartflow.stg_taxi_trips
+[0m14:45:52.017618 [info ] [Thread-1 (]: 1 of 3 START sql view model main_staging.stg_taxi_trips ........................ [RUN]
+[0m14:45:52.019460 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.smartflow.stg_taxi_trips'
+[0m14:45:52.020522 [debug] [Thread-1 (]: Began compiling node model.smartflow.stg_taxi_trips
+[0m14:45:52.041218 [debug] [Thread-1 (]: Writing injected SQL for node "model.smartflow.stg_taxi_trips"
+[0m14:45:52.045163 [debug] [Thread-1 (]: Began executing node model.smartflow.stg_taxi_trips
+[0m14:45:52.128079 [debug] [Thread-1 (]: Writing runtime sql for node "model.smartflow.stg_taxi_trips"
+[0m14:45:52.132724 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m14:45:52.134117 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: BEGIN
+[0m14:45:52.135484 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:45:52.138638 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m14:45:52.140042 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m14:45:52.141712 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+  
+  create view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" as (
+    
+
+/*
+  stg_taxi_trips
+  ──────────────
+  Source : raw.taxi_trips_mapped  (AI-schema-mapped layer)
+  Purpose: Clean, cast, validate, and enrich raw taxi trips.
+
+  What this model does:
+    1. Casts every column to its correct type
+    2. Derives useful fields (trip_duration_mins, hour_of_day, day_of_week, etc.)
+    3. Maps coded values to human-readable labels (payment_type, vendor)
+    4. Flags bad rows instead of dropping them (anomaly pipeline reads these flags)
+    5. Applies soft filters — only truly unrecoverable rows are excluded
+*/
+
+with
+
+source as (
+    select * from "smartflow"."raw"."taxi_trips_mapped"
+),
+
+casted as (
+    select
+        -- ── Identifiers ──────────────────────────────────────────────────
+        cast(vendor_id       as integer)  as vendor_id,
+        cast(rate_code_id    as integer)  as rate_code_id,
+        cast(payment_type    as integer)  as payment_type,
+
+        -- ── Timestamps ───────────────────────────────────────────────────
+        cast(pickup_datetime  as timestamp) as pickup_datetime,
+        cast(dropoff_datetime as timestamp) as dropoff_datetime,
+
+        -- ── Dimensions ───────────────────────────────────────────────────
+        cast(passenger_count      as integer) as passenger_count,
+        cast(pickup_location_id   as integer) as pickup_location_id,
+        cast(dropoff_location_id  as integer) as dropoff_location_id,
+        cast(store_and_fwd_flag   as varchar) as store_and_fwd_flag,
+
+        -- ── Financials ───────────────────────────────────────────────────
+        cast(fare_amount         as double) as fare_amount,
+        cast(tip_amount          as double) as tip_amount,
+        cast(total_amount        as double) as total_amount,
+        cast(congestion_surcharge as double) as congestion_surcharge,
+        cast(airport_fee         as double) as airport_fee,
+
+        -- ── Distances ────────────────────────────────────────────────────
+        cast(trip_distance as double) as trip_distance
+
+    from source
+),
+
+enriched as (
+    select
+        *,
+
+        -- ── Derived time fields ──────────────────────────────────────────
+        round(
+            datediff('minute', pickup_datetime, dropoff_datetime)
+        , 1)                                             as trip_duration_mins,
+
+        extract(hour  from pickup_datetime)              as pickup_hour,
+        extract(dow   from pickup_datetime)              as pickup_day_of_week,
+        -- 0=Sun, 1=Mon ... 6=Sat
+        case extract(dow from pickup_datetime)
+            when 0 then 'Sunday'
+            when 1 then 'Monday'
+            when 2 then 'Tuesday'
+            when 3 then 'Wednesday'
+            when 4 then 'Thursday'
+            when 5 then 'Friday'
+            when 6 then 'Saturday'
+        end                                              as pickup_day_name,
+
+        case
+            when extract(hour from pickup_datetime) between 6  and 11 then 'Morning'
+            when extract(hour from pickup_datetime) between 12 and 16 then 'Afternoon'
+            when extract(hour from pickup_datetime) between 17 and 20 then 'Evening'
+            else 'Night'
+        end                                              as time_of_day,
+
+        -- ── Human-readable labels ────────────────────────────────────────
+        case vendor_id
+            when 1 then 'Creative Mobile Technologies'
+            when 2 then 'VeriFone Inc'
+            else        'Unknown Vendor'
+        end                                              as vendor_name,
+
+        case payment_type
+            when 1 then 'Credit Card'
+            when 2 then 'Cash'
+            when 3 then 'No Charge'
+            when 4 then 'Dispute'
+            else        'Unknown'
+        end                                              as payment_type_label,
+
+        case rate_code_id
+            when 1 then 'Standard Rate'
+            when 2 then 'JFK'
+            when 3 then 'Newark'
+            when 4 then 'Nassau/Westchester'
+            when 5 then 'Negotiated Fare'
+            when 6 then 'Group Ride'
+            else        'Unknown Rate'
+        end                                              as rate_code_label,
+
+        -- ── Data quality flags (1 = problem detected) ────────────────────
+        case when fare_amount    < 0                then 1 else 0 end
+                                                         as flag_negative_fare,
+        case when total_amount   = 0                then 1 else 0 end
+                                                         as flag_zero_total,
+        case when trip_distance  > 500              then 1 else 0 end
+                                                         as flag_impossible_distance,
+        case when passenger_count is null
+              or passenger_count  = 0               then 1 else 0 end
+                                                         as flag_bad_passenger_count,
+        case when payment_type   = 99               then 1 else 0 end
+                                                         as flag_unknown_payment,
+        case when dropoff_datetime <= pickup_datetime then 1 else 0 end
+                                                         as flag_invalid_timestamps,
+
+        -- ── Composite is_anomaly flag (any flag set) ─────────────────────
+        case when
+            (case when fare_amount    < 0                then 1 else 0 end) +
+            (case when total_amount   = 0                then 1 else 0 end) +
+            (case when trip_distance  > 500              then 1 else 0 end) +
+            (case when passenger_count is null
+                  or passenger_count  = 0               then 1 else 0 end) +
+            (case when payment_type   = 99               then 1 else 0 end) +
+            (case when dropoff_datetime <= pickup_datetime then 1 else 0 end)
+            > 0
+        then 1 else 0 end                                as is_anomaly,
+
+        -- ── Tip percentage ───────────────────────────────────────────────
+        case
+            when fare_amount > 0
+            then round(tip_amount / fare_amount * 100, 2)
+            else null
+        end                                              as tip_pct
+
+    from casted
+),
+
+final as (
+    select
+        *,
+        -- ── Record metadata ──────────────────────────────────────────────
+        current_timestamp                                as _loaded_at,
+        'raw.taxi_trips_mapped'                          as _source_table
+    from enriched
+
+    -- Only exclude truly unrecoverable rows:
+    -- trips where pickup = dropoff location AND duration = 0 AND fare = 0
+    where not (
+        pickup_location_id  = dropoff_location_id
+        and trip_duration_mins = 0
+        and fare_amount        = 0
+    )
+)
+
+select * from final
+  );
+
+[0m14:45:52.148445 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m14:45:52.150551 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+  
+  create view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" as (
+    
+
+/*
+  stg_taxi_trips
+  ──────────────
+  Source : raw.taxi_trips_mapped  (AI-schema-mapped layer)
+  Purpose: Clean, cast, validate, and enrich raw taxi trips.
+
+  What this model does:
+    1. Casts every column to its correct type
+    2. Derives useful fields (trip_duration_mins, hour_of_day, day_of_week, etc.)
+    3. Maps coded values to human-readable labels (payment_type, vendor)
+    4. Flags bad rows instead of dropping them (anomaly pipeline reads these flags)
+    5. Applies soft filters — only truly unrecoverable rows are excluded
+*/
+
+with
+
+source as (
+    select * from "smartflow"."raw"."taxi_trips_mapped"
+),
+
+casted as (
+    select
+        -- ── Identifiers ──────────────────────────────────────────────────
+        cast(vendor_id       as integer)  as vendor_id,
+        cast(rate_code_id    as integer)  as rate_code_id,
+        cast(payment_type    as integer)  as payment_type,
+
+        -- ── Timestamps ───────────────────────────────────────────────────
+        cast(pickup_datetime  as timestamp) as pickup_datetime,
+        cast(dropoff_datetime as timestamp) as dropoff_datetime,
+
+        -- ── Dimensions ───────────────────────────────────────────────────
+        cast(passenger_count      as integer) as passenger_count,
+        cast(pickup_location_id   as integer) as pickup_location_id,
+        cast(dropoff_location_id  as integer) as dropoff_location_id,
+        cast(store_and_fwd_flag   as varchar) as store_and_fwd_flag,
+
+        -- ── Financials ───────────────────────────────────────────────────
+        cast(fare_amount         as double) as fare_amount,
+        cast(tip_amount          as double) as tip_amount,
+        cast(total_amount        as double) as total_amount,
+        cast(congestion_surcharge as double) as congestion_surcharge,
+        cast(airport_fee         as double) as airport_fee,
+
+        -- ── Distances ────────────────────────────────────────────────────
+        cast(trip_distance as double) as trip_distance
+
+    from source
+),
+
+enriched as (
+    select
+        *,
+
+        -- ── Derived time fields ──────────────────────────────────────────
+        round(
+            datediff('minute', pickup_datetime, dropoff_datetime)
+        , 1)                                             as trip_duration_mins,
+
+        extract(hour  from pickup_datetime)              as pickup_hour,
+        extract(dow   from pickup_datetime)              as pickup_day_of_week,
+        -- 0=Sun, 1=Mon ... 6=Sat
+        case extract(dow from pickup_datetime)
+            when 0 then 'Sunday'
+            when 1 then 'Monday'
+            when 2 then 'Tuesday'
+            when 3 then 'Wednesday'
+            when 4 then 'Thursday'
+            when 5 then 'Friday'
+            when 6 then 'Saturday'
+        end                                              as pickup_day_name,
+
+        case
+            when extract(hour from pickup_datetime) between 6  and 11 then 'Morning'
+            when extract(hour from pickup_datetime) between 12 and 16 then 'Afternoon'
+            when extract(hour from pickup_datetime) between 17 and 20 then 'Evening'
+            else 'Night'
+        end                                              as time_of_day,
+
+        -- ── Human-readable labels ────────────────────────────────────────
+        case vendor_id
+            when 1 then 'Creative Mobile Technologies'
+            when 2 then 'VeriFone Inc'
+            else        'Unknown Vendor'
+        end                                              as vendor_name,
+
+        case payment_type
+            when 1 then 'Credit Card'
+            when 2 then 'Cash'
+            when 3 then 'No Charge'
+            when 4 then 'Dispute'
+            else        'Unknown'
+        end                                              as payment_type_label,
+
+        case rate_code_id
+            when 1 then 'Standard Rate'
+            when 2 then 'JFK'
+            when 3 then 'Newark'
+            when 4 then 'Nassau/Westchester'
+            when 5 then 'Negotiated Fare'
+            when 6 then 'Group Ride'
+            else        'Unknown Rate'
+        end                                              as rate_code_label,
+
+        -- ── Data quality flags (1 = problem detected) ────────────────────
+        case when fare_amount    < 0                then 1 else 0 end
+                                                         as flag_negative_fare,
+        case when total_amount   = 0                then 1 else 0 end
+                                                         as flag_zero_total,
+        case when trip_distance  > 500              then 1 else 0 end
+                                                         as flag_impossible_distance,
+        case when passenger_count is null
+              or passenger_count  = 0               then 1 else 0 end
+                                                         as flag_bad_passenger_count,
+        case when payment_type   = 99               then 1 else 0 end
+                                                         as flag_unknown_payment,
+        case when dropoff_datetime <= pickup_datetime then 1 else 0 end
+                                                         as flag_invalid_timestamps,
+
+        -- ── Composite is_anomaly flag (any flag set) ─────────────────────
+        case when
+            (case when fare_amount    < 0                then 1 else 0 end) +
+            (case when total_amount   = 0                then 1 else 0 end) +
+            (case when trip_distance  > 500              then 1 else 0 end) +
+            (case when passenger_count is null
+                  or passenger_count  = 0               then 1 else 0 end) +
+            (case when payment_type   = 99               then 1 else 0 end) +
+            (case when dropoff_datetime <= pickup_datetime then 1 else 0 end)
+            > 0
+        then 1 else 0 end                                as is_anomaly,
+
+        -- ── Tip percentage ───────────────────────────────────────────────
+        case
+            when fare_amount > 0
+            then round(tip_amount / fare_amount * 100, 2)
+            else null
+        end                                              as tip_pct
+
+    from casted
+),
+
+final as (
+    select
+        *,
+        -- ── Record metadata ──────────────────────────────────────────────
+        current_timestamp                                as _loaded_at,
+        'raw.taxi_trips_mapped'                          as _source_table
+    from enriched
+
+    -- Only exclude truly unrecoverable rows:
+    -- trips where pickup = dropoff location AND duration = 0 AND fare = 0
+    where not (
+        pickup_location_id  = dropoff_location_id
+        and trip_duration_mins = 0
+        and fare_amount        = 0
+    )
+)
+
+select * from final
+  );
+
+[0m14:45:52.152707 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:45:52.153856 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: ROLLBACK
+[0m14:45:52.159447 [debug] [Thread-1 (]: Failed to rollback 'model.smartflow.stg_taxi_trips'
+[0m14:45:52.161059 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: Close
+[0m14:45:52.178187 [debug] [Thread-1 (]: Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m14:45:52.183921 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '563464a5-dc49-41ab-b42a-de09f793c48b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEC08A510>]}
+[0m14:45:52.186566 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model main_staging.stg_taxi_trips ............... [[31mERROR[0m in 0.16s]
+[0m14:45:52.188371 [debug] [Thread-1 (]: Finished running node model.smartflow.stg_taxi_trips
+[0m14:45:52.190069 [debug] [Thread-7 (]: Marking all children of 'model.smartflow.stg_taxi_trips' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined.
+[0m14:45:52.194366 [debug] [Thread-2 (]: Began running node model.smartflow.fct_trips
+[0m14:45:52.196071 [info ] [Thread-2 (]: 2 of 3 SKIP relation main_marts.fct_trips ...................................... [[33mSKIP[0m]
+[0m14:45:52.197479 [debug] [Thread-2 (]: Finished running node model.smartflow.fct_trips
+[0m14:45:52.199811 [debug] [Thread-3 (]: Began running node model.smartflow.daily_metrics
+[0m14:45:52.201663 [info ] [Thread-3 (]: 3 of 3 SKIP relation main_metrics.daily_metrics ................................ [[33mSKIP[0m]
+[0m14:45:52.203859 [debug] [Thread-3 (]: Finished running node model.smartflow.daily_metrics
+[0m14:45:52.207844 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:52.209198 [debug] [MainThread]: On master: BEGIN
+[0m14:45:52.210586 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:45:52.212708 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m14:45:52.213913 [debug] [MainThread]: On master: COMMIT
+[0m14:45:52.214582 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:52.215340 [debug] [MainThread]: On master: COMMIT
+[0m14:45:52.216882 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:45:52.217793 [debug] [MainThread]: On master: Close
+[0m14:45:52.218960 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:45:52.219690 [debug] [MainThread]: Connection 'create_smartflow_main_marts' was properly closed.
+[0m14:45:52.220407 [debug] [MainThread]: Connection 'create_smartflow_main_metrics' was properly closed.
+[0m14:45:52.221028 [debug] [MainThread]: Connection 'create_smartflow_main_staging' was properly closed.
+[0m14:45:52.221650 [debug] [MainThread]: Connection 'list_smartflow_main_staging' was properly closed.
+[0m14:45:52.222273 [debug] [MainThread]: Connection 'list_smartflow_main_marts' was properly closed.
+[0m14:45:52.222851 [debug] [MainThread]: Connection 'list_smartflow_main_metrics' was properly closed.
+[0m14:45:52.223572 [debug] [MainThread]: Connection 'model.smartflow.stg_taxi_trips' was properly closed.
+[0m14:45:52.224591 [info ] [MainThread]: 
+[0m14:45:52.226003 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.75 seconds (0.75s).
+[0m14:45:52.228087 [debug] [MainThread]: Command end result
+[0m14:45:52.321678 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m14:45:52.331666 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m14:45:52.350607 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\run_results.json
+[0m14:45:52.352218 [info ] [MainThread]: 
+[0m14:45:52.353503 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:45:52.354529 [info ] [MainThread]: 
+[0m14:45:52.355830 [error] [MainThread]: [31mFailure in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)[0m
+[0m14:45:52.357414 [error] [MainThread]:   Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m14:45:52.358334 [info ] [MainThread]: 
+[0m14:45:52.359312 [info ] [MainThread]:   compiled code at target\compiled\smartflow\models\staging\stg_taxi_trips.sql
+[0m14:45:52.360170 [info ] [MainThread]: 
+[0m14:45:52.361045 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m14:45:52.363391 [debug] [MainThread]: Command `dbt run` failed at 14:45:52.363064 after 4.35 seconds
+[0m14:45:52.364455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEC4C3C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEC64EDF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CEC64F1B0>]}
+[0m14:45:52.365438 [debug] [MainThread]: Flushing usage events
+[0m14:45:54.127403 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:54:13.176306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD9E958590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA081BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA081B890>]}
+
+
+============================== 15:54:13.185389 | cd2c2f11-7779-4676-bdff-ad9408931e3d ==============================
+[0m15:54:13.185389 [info ] [MainThread]: Running with dbt=1.11.11
+[0m15:54:13.186348 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --profiles-dir .', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\varsh\\OneDrive\\Desktop\\smartflow-etl\\dbt_project\\logs'}
+[0m15:54:13.558880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cd2c2f11-7779-4676-bdff-ad9408931e3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD9EB0DBA0>]}
+[0m15:54:13.639620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cd2c2f11-7779-4676-bdff-ad9408931e3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD9F697130>]}
+[0m15:54:13.642806 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m15:54:14.107855 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m15:54:15.708787 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:54:15.710068 [debug] [MainThread]: Partial parsing: updated file: smartflow://models\staging\stg_taxi_trips.sql
+[0m15:54:16.198135 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_taxi_trips'
+in package 'smartflow' (models\staging\schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m15:54:16.199124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'cd2c2f11-7779-4676-bdff-ad9408931e3d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA091A850>]}
+[0m15:54:16.311788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cd2c2f11-7779-4676-bdff-ad9408931e3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA0F67020>]}
+[0m15:54:16.407664 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m15:54:16.410535 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m15:54:16.430960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cd2c2f11-7779-4676-bdff-ad9408931e3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA128C130>]}
+[0m15:54:16.431423 [info ] [MainThread]: Found 3 models, 26 data tests, 1 source, 485 macros
+[0m15:54:16.432053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cd2c2f11-7779-4676-bdff-ad9408931e3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA12A3110>]}
+[0m15:54:16.433697 [info ] [MainThread]: 
+[0m15:54:16.434110 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:54:16.434472 [info ] [MainThread]: 
+[0m15:54:16.435197 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:54:16.439028 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m15:54:16.447867 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m15:54:16.449962 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m15:54:19.715637 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m15:54:19.716033 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:54:19.716354 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m15:54:19.716799 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:19.717237 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m15:54:19.717727 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:54:19.718404 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:54:19.718718 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:19.719190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:19.946976 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+[0m15:54:19.948026 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:54:19.948539 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m15:54:19.948931 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:20.139248 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+[0m15:54:20.139808 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:54:20.140042 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m15:54:20.140234 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:20.316519 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+[0m15:54:20.317173 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:54:20.317477 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m15:54:20.317730 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:20.487891 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+[0m15:54:20.488461 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_schemas
+[0m15:54:20.488803 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m15:54:20.489072 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:20.666249 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+[0m15:54:20.667344 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_schemas
+[0m15:54:20.667642 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m15:54:20.667933 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:20.827915 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+[0m15:54:20.828550 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_schemas
+[0m15:54:20.828855 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m15:54:20.829109 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:21.330387 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:54:21.330991 [debug] [MainThread]: Connection 'list_smartflow' was properly closed.
+[0m15:54:21.331382 [debug] [MainThread]: Connection 'list_smartflow' was properly closed.
+[0m15:54:21.331693 [debug] [MainThread]: Connection 'list_smartflow' was properly closed.
+[0m15:54:21.332281 [info ] [MainThread]: 
+[0m15:54:21.332975 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 4.90 seconds (4.90s).
+[0m15:54:21.333707 [error] [MainThread]: Encountered an error:
+IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+[0m15:54:21.722766 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 95, in exception_handler
+    yield
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\sql\connections.py", line 147, in add_query
+    cursor = connection.handle.cursor()
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\environments\local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\environments\__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 95, in exception_handler
+    yield
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\base\impl.py", line 1357, in execute_macro
+    result = macro_function(**kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 50, in macro
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 52, in macro
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt_common\record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\base\impl.py", line 508, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 130, in execute
+    return super().execute(sql, auto_begin, fetch, limit)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\sql\connections.py", line 219, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\sql\connections.py", line 131, in add_query
+    with self.exception_handler(sql):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\varsh\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\base\connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\environments\local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\environments\__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\requires.py", line 391, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\requires.py", line 408, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\cli\main.py", line 593, in run
+    results = task.run()
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\task\runnable.py", line 626, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\task\runnable.py", line 559, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\task\run.py", line 1114, in before_run
+    self.create_schemas(adapter, required_schemas)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\task\runnable.py", line 734, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+                                    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\varsh\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\varsh\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\varsh\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt_common\utils\executor.py", line 16, in connected
+    return func(*args, **kwargs)
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\task\runnable.py", line 709, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\sql\impl.py", line 219, in list_schemas
+    results = self.execute_macro(LIST_SCHEMAS_MACRO_NAME, kwargs={"database": database})
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\base\impl.py", line 1356, in execute_macro
+    with self.connections.exception_handler(f"macro {macro_name}"):
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\base\connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\environments\local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\.venv\Lib\site-packages\dbt\adapters\duckdb\environments\__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "C:\Users\varsh\OneDrive\Desktop\smartflow-etl\data\smartflow.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\varsh\AppData\Local\Programs\Python\Python313\python.exe (PID 15520)
+
+[0m15:54:21.725114 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 4 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:54:21.728836 [debug] [MainThread]: Command `dbt run` failed at 15:54:21.728548 after 8.83 seconds
+[0m15:54:21.729462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA08713D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA12D9860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADA24D09F0>]}
+[0m15:54:21.730004 [debug] [MainThread]: Flushing usage events
+[0m15:54:22.919419 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:57:41.436465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028339D38590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833BBDBED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833BBDB750>]}
+
+
+============================== 15:57:41.442105 | b732624a-138e-4a92-ba66-905790d6add5 ==============================
+[0m15:57:41.442105 [info ] [MainThread]: Running with dbt=1.11.11
+[0m15:57:41.448984 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'invocation_command': 'dbt run --profiles-dir .', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\varsh\\OneDrive\\Desktop\\smartflow-etl\\dbt_project\\logs'}
+[0m15:57:41.747870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b732624a-138e-4a92-ba66-905790d6add5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028339EE9A70>]}
+[0m15:57:41.833755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b732624a-138e-4a92-ba66-905790d6add5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833AA77130>]}
+[0m15:57:41.837407 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m15:57:42.015214 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m15:57:42.157114 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:57:42.157452 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:57:42.157646 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:57:42.193824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b732624a-138e-4a92-ba66-905790d6add5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833BCFB250>]}
+[0m15:57:42.363302 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m15:57:42.366541 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m15:57:42.398144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b732624a-138e-4a92-ba66-905790d6add5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833C279040>]}
+[0m15:57:42.398911 [info ] [MainThread]: Found 3 models, 26 data tests, 1 source, 485 macros
+[0m15:57:42.400089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b732624a-138e-4a92-ba66-905790d6add5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833BF8D2B0>]}
+[0m15:57:42.402892 [info ] [MainThread]: 
+[0m15:57:42.403565 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:57:42.404074 [info ] [MainThread]: 
+[0m15:57:42.405954 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:57:42.411049 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m15:57:42.425175 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m15:57:42.428313 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m15:57:42.466441 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m15:57:42.466857 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m15:57:42.467182 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m15:57:42.467403 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:57:42.467724 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:57:42.468040 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m15:57:42.468367 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:42.468589 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:42.468842 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:42.499909 [debug] [ThreadPool]: SQL status: OK in 0.031 seconds
+[0m15:57:42.500394 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m15:57:42.500743 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m15:57:42.502878 [debug] [ThreadPool]: On list_smartflow: Close
+[0m15:57:42.503846 [debug] [ThreadPool]: On list_smartflow: Close
+[0m15:57:42.504600 [debug] [ThreadPool]: On list_smartflow: Close
+[0m15:57:42.505688 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_metrics)
+[0m15:57:42.506549 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_metrics"
+"
+[0m15:57:42.506935 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_marts)
+[0m15:57:42.512146 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m15:57:42.512454 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_staging)
+[0m15:57:42.512777 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_marts"
+"
+[0m15:57:42.513023 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m15:57:42.513295 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_staging"
+"
+[0m15:57:42.515572 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m15:57:42.515900 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:57:42.516996 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m15:57:42.517280 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m15:57:42.517721 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m15:57:42.517948 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:57:42.518206 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:57:42.518596 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m15:57:42.519242 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:42.519461 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:42.520406 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m15:57:42.521205 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m15:57:42.521419 [debug] [ThreadPool]: On create_smartflow_main_metrics: BEGIN
+[0m15:57:42.522075 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m15:57:42.522331 [debug] [ThreadPool]: On create_smartflow_main_marts: BEGIN
+[0m15:57:42.522597 [debug] [ThreadPool]: On create_smartflow_main_staging: BEGIN
+[0m15:57:42.522983 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:42.523191 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m15:57:42.523411 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:42.523778 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:42.524368 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m15:57:42.523978 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_metrics"
+    
+[0m15:57:42.524179 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m15:57:42.524531 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_marts"
+    
+[0m15:57:42.525500 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_staging"
+    
+[0m15:57:42.526039 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:42.526265 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:42.526466 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m15:57:42.527031 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m15:57:42.527638 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m15:57:42.528220 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m15:57:42.528515 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m15:57:42.528738 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m15:57:42.528978 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m15:57:42.529210 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m15:57:42.529456 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m15:57:42.529687 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m15:57:42.530180 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:42.530423 [debug] [ThreadPool]: On create_smartflow_main_staging: Close
+[0m15:57:42.530648 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:42.530914 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:42.531252 [debug] [ThreadPool]: On create_smartflow_main_metrics: Close
+[0m15:57:42.531456 [debug] [ThreadPool]: On create_smartflow_main_marts: Close
+[0m15:57:42.532796 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_metrics'
+[0m15:57:42.536652 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m15:57:42.537022 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_marts'
+[0m15:57:42.537282 [debug] [ThreadPool]: On list_smartflow_main_metrics: BEGIN
+[0m15:57:42.537737 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_staging'
+[0m15:57:42.539086 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m15:57:42.539389 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:42.540383 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m15:57:42.540655 [debug] [ThreadPool]: On list_smartflow_main_marts: BEGIN
+[0m15:57:42.541013 [debug] [ThreadPool]: On list_smartflow_main_staging: BEGIN
+[0m15:57:42.541211 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:42.541451 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m15:57:42.541618 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:42.541908 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m15:57:42.542113 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:42.542374 [debug] [ThreadPool]: On list_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_metrics"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_metrics'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m15:57:42.542592 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m15:57:42.542809 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:42.543110 [debug] [ThreadPool]: On list_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_marts"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_marts'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m15:57:42.543370 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m15:57:42.543803 [debug] [ThreadPool]: On list_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_staging"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_staging'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m15:57:42.552298 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m15:57:42.553366 [debug] [ThreadPool]: On list_smartflow_main_metrics: ROLLBACK
+[0m15:57:42.553720 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:57:42.554580 [debug] [ThreadPool]: On list_smartflow_main_marts: ROLLBACK
+[0m15:57:42.555098 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m15:57:42.555952 [debug] [ThreadPool]: On list_smartflow_main_staging: ROLLBACK
+[0m15:57:42.557089 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_marts'
+[0m15:57:42.557441 [debug] [ThreadPool]: On list_smartflow_main_marts: Close
+[0m15:57:42.558024 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_staging'
+[0m15:57:42.558497 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_metrics'
+[0m15:57:42.558754 [debug] [ThreadPool]: On list_smartflow_main_staging: Close
+[0m15:57:42.558999 [debug] [ThreadPool]: On list_smartflow_main_metrics: Close
+[0m15:57:42.559696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b732624a-138e-4a92-ba66-905790d6add5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833D744390>]}
+[0m15:57:42.560036 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:42.560220 [debug] [MainThread]: On master: BEGIN
+[0m15:57:42.560382 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:57:42.561053 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:57:42.561296 [debug] [MainThread]: On master: COMMIT
+[0m15:57:42.561488 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:42.561657 [debug] [MainThread]: On master: COMMIT
+[0m15:57:42.562346 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:57:42.562597 [debug] [MainThread]: On master: Close
+[0m15:57:42.567529 [debug] [Thread-1 (]: Began running node model.smartflow.stg_taxi_trips
+[0m15:57:42.567985 [info ] [Thread-1 (]: 1 of 3 START sql view model main_staging.stg_taxi_trips ........................ [RUN]
+[0m15:57:42.568508 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.smartflow.stg_taxi_trips'
+[0m15:57:42.568826 [debug] [Thread-1 (]: Began compiling node model.smartflow.stg_taxi_trips
+[0m15:57:42.574791 [debug] [Thread-1 (]: Writing injected SQL for node "model.smartflow.stg_taxi_trips"
+[0m15:57:42.576187 [debug] [Thread-1 (]: Began executing node model.smartflow.stg_taxi_trips
+[0m15:57:42.601365 [debug] [Thread-1 (]: Writing runtime sql for node "model.smartflow.stg_taxi_trips"
+[0m15:57:42.602498 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m15:57:42.602823 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: BEGIN
+[0m15:57:42.603035 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:57:42.603788 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:42.604066 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m15:57:42.604367 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+  
+  create view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" as (
+    
+
+with source as (
+    select * from "smartflow"."raw"."taxi_trips_mapped"
+),
+
+casted as (
+    select
+        cast(vendor_id            as integer)   as vendor_id,
+        cast(rate_code_id         as integer)   as rate_code_id,
+        cast(payment_type         as integer)   as payment_type,
+        cast(pickup_datetime      as timestamp) as pickup_datetime,
+        cast(dropoff_datetime     as timestamp) as dropoff_datetime,
+        cast(passenger_count      as integer)   as passenger_count,
+        cast(pickup_location_id   as integer)   as pickup_location_id,
+        cast(dropoff_location_id  as integer)   as dropoff_location_id,
+        cast(store_and_fwd_flag   as varchar)   as store_and_fwd_flag,
+        cast(fare_amount          as double)    as fare_amount,
+        cast(tip_amount           as double)    as tip_amount,
+        cast(total_amount         as double)    as total_amount,
+        cast(congestion_surcharge as double)    as congestion_surcharge,
+        cast(airport_fee          as double)    as airport_fee,
+        cast(trip_distance        as double)    as trip_distance
+    from source
+),
+
+enriched as (
+    select
+        vendor_id,
+        rate_code_id,
+        payment_type,
+        pickup_datetime,
+        dropoff_datetime,
+        passenger_count,
+        pickup_location_id,
+        dropoff_location_id,
+        store_and_fwd_flag,
+        fare_amount,
+        tip_amount,
+        total_amount,
+        congestion_surcharge,
+        airport_fee,
+        trip_distance,
+
+        -- derived time fields
+        round(datediff('minute', pickup_datetime, dropoff_datetime), 1) as trip_duration_mins,
+        extract(hour from pickup_datetime)                               as pickup_hour,
+        extract(dow  from pickup_datetime)                               as pickup_day_of_week,
+
+        case extract(dow from pickup_datetime)
+            when 0 then 'Sunday'   when 1 then 'Monday'
+            when 2 then 'Tuesday'  when 3 then 'Wednesday'
+            when 4 then 'Thursday' when 5 then 'Friday'
+            when 6 then 'Saturday'
+        end as pickup_day_name,
+
+        case
+            when extract(hour from pickup_datetime) between 6  and 11 then 'Morning'
+            when extract(hour from pickup_datetime) between 12 and 16 then 'Afternoon'
+            when extract(hour from pickup_datetime) between 17 and 20 then 'Evening'
+            else 'Night'
+        end as time_of_day,
+
+        -- labels
+        case vendor_id
+            when 1 then 'Creative Mobile Technologies'
+            when 2 then 'VeriFone Inc'
+            else        'Unknown Vendor'
+        end as vendor_name,
+
+        case payment_type
+            when 1 then 'Credit Card' when 2 then 'Cash'
+            when 3 then 'No Charge'   when 4 then 'Dispute'
+            else        'Unknown'
+        end as payment_type_label,
+
+        case rate_code_id
+            when 1 then 'Standard Rate'      when 2 then 'JFK'
+            when 3 then 'Newark'             when 4 then 'Nassau/Westchester'
+            when 5 then 'Negotiated Fare'    when 6 then 'Group Ride'
+            else        'Unknown Rate'
+        end as rate_code_label,
+
+        -- quality flags
+        case when fare_amount    < 0   then 1 else 0 end as flag_negative_fare,
+        case when total_amount   = 0   then 1 else 0 end as flag_zero_total,
+        case when trip_distance  > 500 then 1 else 0 end as flag_impossible_distance,
+        case when passenger_count is null
+              or passenger_count = 0  then 1 else 0 end as flag_bad_passenger_count,
+        case when payment_type   = 99  then 1 else 0 end as flag_unknown_payment,
+        case when dropoff_datetime <= pickup_datetime
+                                       then 1 else 0 end as flag_invalid_timestamps,
+
+        -- tip pct
+        case when fare_amount > 0
+             then round(tip_amount / fare_amount * 100, 2)
+             else null
+        end as tip_pct,
+
+        current_timestamp         as _loaded_at,
+        'raw.taxi_trips_mapped'   as _source_table
+
+    from casted
+),
+
+final as (
+    select
+        *,
+        -- composite anomaly flag
+        case when (
+            flag_negative_fare + flag_zero_total + flag_impossible_distance +
+            flag_bad_passenger_count + flag_unknown_payment + flag_invalid_timestamps
+        ) > 0 then 1 else 0 end as is_anomaly
+    from enriched
+    where not (
+        pickup_location_id = dropoff_location_id
+        and trip_duration_mins = 0
+        and fare_amount = 0
+    )
+)
+
+select * from final
+  );
+
+[0m15:57:42.608438 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m15:57:42.608851 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+  
+  create view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" as (
+    
+
+with source as (
+    select * from "smartflow"."raw"."taxi_trips_mapped"
+),
+
+casted as (
+    select
+        cast(vendor_id            as integer)   as vendor_id,
+        cast(rate_code_id         as integer)   as rate_code_id,
+        cast(payment_type         as integer)   as payment_type,
+        cast(pickup_datetime      as timestamp) as pickup_datetime,
+        cast(dropoff_datetime     as timestamp) as dropoff_datetime,
+        cast(passenger_count      as integer)   as passenger_count,
+        cast(pickup_location_id   as integer)   as pickup_location_id,
+        cast(dropoff_location_id  as integer)   as dropoff_location_id,
+        cast(store_and_fwd_flag   as varchar)   as store_and_fwd_flag,
+        cast(fare_amount          as double)    as fare_amount,
+        cast(tip_amount           as double)    as tip_amount,
+        cast(total_amount         as double)    as total_amount,
+        cast(congestion_surcharge as double)    as congestion_surcharge,
+        cast(airport_fee          as double)    as airport_fee,
+        cast(trip_distance        as double)    as trip_distance
+    from source
+),
+
+enriched as (
+    select
+        vendor_id,
+        rate_code_id,
+        payment_type,
+        pickup_datetime,
+        dropoff_datetime,
+        passenger_count,
+        pickup_location_id,
+        dropoff_location_id,
+        store_and_fwd_flag,
+        fare_amount,
+        tip_amount,
+        total_amount,
+        congestion_surcharge,
+        airport_fee,
+        trip_distance,
+
+        -- derived time fields
+        round(datediff('minute', pickup_datetime, dropoff_datetime), 1) as trip_duration_mins,
+        extract(hour from pickup_datetime)                               as pickup_hour,
+        extract(dow  from pickup_datetime)                               as pickup_day_of_week,
+
+        case extract(dow from pickup_datetime)
+            when 0 then 'Sunday'   when 1 then 'Monday'
+            when 2 then 'Tuesday'  when 3 then 'Wednesday'
+            when 4 then 'Thursday' when 5 then 'Friday'
+            when 6 then 'Saturday'
+        end as pickup_day_name,
+
+        case
+            when extract(hour from pickup_datetime) between 6  and 11 then 'Morning'
+            when extract(hour from pickup_datetime) between 12 and 16 then 'Afternoon'
+            when extract(hour from pickup_datetime) between 17 and 20 then 'Evening'
+            else 'Night'
+        end as time_of_day,
+
+        -- labels
+        case vendor_id
+            when 1 then 'Creative Mobile Technologies'
+            when 2 then 'VeriFone Inc'
+            else        'Unknown Vendor'
+        end as vendor_name,
+
+        case payment_type
+            when 1 then 'Credit Card' when 2 then 'Cash'
+            when 3 then 'No Charge'   when 4 then 'Dispute'
+            else        'Unknown'
+        end as payment_type_label,
+
+        case rate_code_id
+            when 1 then 'Standard Rate'      when 2 then 'JFK'
+            when 3 then 'Newark'             when 4 then 'Nassau/Westchester'
+            when 5 then 'Negotiated Fare'    when 6 then 'Group Ride'
+            else        'Unknown Rate'
+        end as rate_code_label,
+
+        -- quality flags
+        case when fare_amount    < 0   then 1 else 0 end as flag_negative_fare,
+        case when total_amount   = 0   then 1 else 0 end as flag_zero_total,
+        case when trip_distance  > 500 then 1 else 0 end as flag_impossible_distance,
+        case when passenger_count is null
+              or passenger_count = 0  then 1 else 0 end as flag_bad_passenger_count,
+        case when payment_type   = 99  then 1 else 0 end as flag_unknown_payment,
+        case when dropoff_datetime <= pickup_datetime
+                                       then 1 else 0 end as flag_invalid_timestamps,
+
+        -- tip pct
+        case when fare_amount > 0
+             then round(tip_amount / fare_amount * 100, 2)
+             else null
+        end as tip_pct,
+
+        current_timestamp         as _loaded_at,
+        'raw.taxi_trips_mapped'   as _source_table
+
+    from casted
+),
+
+final as (
+    select
+        *,
+        -- composite anomaly flag
+        case when (
+            flag_negative_fare + flag_zero_total + flag_impossible_distance +
+            flag_bad_passenger_count + flag_unknown_payment + flag_invalid_timestamps
+        ) > 0 then 1 else 0 end as is_anomaly
+    from enriched
+    where not (
+        pickup_location_id = dropoff_location_id
+        and trip_duration_mins = 0
+        and fare_amount = 0
+    )
+)
+
+select * from final
+  );
+
+[0m15:57:42.609181 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m15:57:42.609388 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: ROLLBACK
+[0m15:57:42.610786 [debug] [Thread-1 (]: Failed to rollback 'model.smartflow.stg_taxi_trips'
+[0m15:57:42.611192 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: Close
+[0m15:57:42.645441 [debug] [Thread-1 (]: Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m15:57:42.648608 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b732624a-138e-4a92-ba66-905790d6add5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833BE7A8D0>]}
+[0m15:57:42.649565 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model main_staging.stg_taxi_trips ............... [[31mERROR[0m in 0.08s]
+[0m15:57:42.650936 [debug] [Thread-1 (]: Finished running node model.smartflow.stg_taxi_trips
+[0m15:57:42.651632 [debug] [Thread-7 (]: Marking all children of 'model.smartflow.stg_taxi_trips' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined.
+[0m15:57:42.653107 [debug] [Thread-2 (]: Began running node model.smartflow.fct_trips
+[0m15:57:42.653652 [info ] [Thread-2 (]: 2 of 3 SKIP relation main_marts.fct_trips ...................................... [[33mSKIP[0m]
+[0m15:57:42.654978 [debug] [Thread-2 (]: Finished running node model.smartflow.fct_trips
+[0m15:57:42.656707 [debug] [Thread-3 (]: Began running node model.smartflow.daily_metrics
+[0m15:57:42.657320 [info ] [Thread-3 (]: 3 of 3 SKIP relation main_metrics.daily_metrics ................................ [[33mSKIP[0m]
+[0m15:57:42.658314 [debug] [Thread-3 (]: Finished running node model.smartflow.daily_metrics
+[0m15:57:42.659951 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:42.660311 [debug] [MainThread]: On master: BEGIN
+[0m15:57:42.660590 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:57:42.661245 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:57:42.661548 [debug] [MainThread]: On master: COMMIT
+[0m15:57:42.661822 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:42.662063 [debug] [MainThread]: On master: COMMIT
+[0m15:57:42.662472 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:57:42.663241 [debug] [MainThread]: On master: Close
+[0m15:57:42.664176 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:57:42.664628 [debug] [MainThread]: Connection 'create_smartflow_main_staging' was properly closed.
+[0m15:57:42.664918 [debug] [MainThread]: Connection 'create_smartflow_main_metrics' was properly closed.
+[0m15:57:42.665173 [debug] [MainThread]: Connection 'create_smartflow_main_marts' was properly closed.
+[0m15:57:42.665385 [debug] [MainThread]: Connection 'list_smartflow_main_metrics' was properly closed.
+[0m15:57:42.665552 [debug] [MainThread]: Connection 'list_smartflow_main_marts' was properly closed.
+[0m15:57:42.665763 [debug] [MainThread]: Connection 'list_smartflow_main_staging' was properly closed.
+[0m15:57:42.665941 [debug] [MainThread]: Connection 'model.smartflow.stg_taxi_trips' was properly closed.
+[0m15:57:42.666315 [info ] [MainThread]: 
+[0m15:57:42.671750 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.26 seconds (0.26s).
+[0m15:57:42.672684 [debug] [MainThread]: Command end result
+[0m15:57:42.706013 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m15:57:42.708733 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m15:57:42.716712 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\run_results.json
+[0m15:57:42.717334 [info ] [MainThread]: 
+[0m15:57:42.717798 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:57:42.718250 [info ] [MainThread]: 
+[0m15:57:42.718769 [error] [MainThread]: [31mFailure in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)[0m
+[0m15:57:42.719126 [error] [MainThread]:   Runtime Error in model stg_taxi_trips (models\staging\stg_taxi_trips.sql)
+  Binder Error: Column "pickup_location_id" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m15:57:42.719363 [info ] [MainThread]: 
+[0m15:57:42.719754 [info ] [MainThread]:   compiled code at target\compiled\smartflow\models\staging\stg_taxi_trips.sql
+[0m15:57:42.720078 [info ] [MainThread]: 
+[0m15:57:42.720397 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m15:57:42.721110 [debug] [MainThread]: Command `dbt run` failed at 15:57:42.721023 after 1.46 seconds
+[0m15:57:42.721381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833C26FE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833C43F1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002833C43EDF0>]}
+[0m15:57:42.721675 [debug] [MainThread]: Flushing usage events
+[0m15:57:43.816976 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:09:34.083645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FC028590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FDEEBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FDEEB890>]}
+
+
+============================== 16:09:34.095950 | ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b ==============================
+[0m16:09:34.095950 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:09:34.097213 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\varsh\\OneDrive\\Desktop\\smartflow-etl\\dbt_project\\logs'}
+[0m16:09:34.394730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FC1DDBA0>]}
+[0m16:09:34.462830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FCD63130>]}
+[0m16:09:34.468275 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m16:09:34.682547 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:09:34.834194 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:09:34.834579 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:09:34.835050 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:09:34.880440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FDFEB250>]}
+[0m16:09:35.064787 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m16:09:35.068621 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m16:09:35.087803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FE5D5040>]}
+[0m16:09:35.088256 [info ] [MainThread]: Found 3 models, 26 data tests, 1 source, 485 macros
+[0m16:09:35.088770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FE2992B0>]}
+[0m16:09:35.090547 [info ] [MainThread]: 
+[0m16:09:35.091053 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:09:35.091598 [info ] [MainThread]: 
+[0m16:09:35.092146 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:09:35.096720 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m16:09:35.103050 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m16:09:35.113172 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow'
+[0m16:09:35.171634 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m16:09:35.171974 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m16:09:35.172243 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m16:09:35.172569 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:35.172779 [debug] [ThreadPool]: Using duckdb connection "list_smartflow"
+[0m16:09:35.173025 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m16:09:35.173333 [debug] [ThreadPool]: On list_smartflow: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"smartflow"'
+    
+  
+  
+[0m16:09:35.173540 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:35.173725 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:35.208574 [debug] [ThreadPool]: SQL status: OK in 0.035 seconds
+[0m16:09:35.209131 [debug] [ThreadPool]: SQL status: OK in 0.037 seconds
+[0m16:09:35.210158 [debug] [ThreadPool]: On list_smartflow: Close
+[0m16:09:35.210445 [debug] [ThreadPool]: SQL status: OK in 0.037 seconds
+[0m16:09:35.211585 [debug] [ThreadPool]: On list_smartflow: Close
+[0m16:09:35.212620 [debug] [ThreadPool]: On list_smartflow: Close
+[0m16:09:35.213344 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_marts)
+[0m16:09:35.213941 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_marts"
+"
+[0m16:09:35.218181 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m16:09:35.218429 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m16:09:35.218621 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:09:35.219068 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_staging)
+[0m16:09:35.219526 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_smartflow, now create_smartflow_main_metrics)
+[0m16:09:35.220099 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_staging"
+"
+[0m16:09:35.220439 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m16:09:35.220894 [debug] [ThreadPool]: Creating schema "database: "smartflow"
+schema: "main_metrics"
+"
+[0m16:09:35.222939 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m16:09:35.224083 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m16:09:35.224949 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m16:09:35.225295 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m16:09:35.225776 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='smartflow'
+        and type='sqlite'
+    
+  
+[0m16:09:35.226058 [debug] [ThreadPool]: On create_smartflow_main_marts: BEGIN
+[0m16:09:35.226825 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:09:35.227294 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:09:35.228542 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:09:35.228876 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:09:35.230135 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m16:09:35.230422 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m16:09:35.230810 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m16:09:35.231045 [debug] [ThreadPool]: On create_smartflow_main_metrics: BEGIN
+[0m16:09:35.231412 [debug] [ThreadPool]: On create_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_marts"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_marts"
+    
+[0m16:09:35.232365 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m16:09:35.232798 [debug] [ThreadPool]: On create_smartflow_main_staging: BEGIN
+[0m16:09:35.233157 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:09:35.233723 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m16:09:35.233936 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_marts"
+[0m16:09:35.234177 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m16:09:35.234583 [debug] [ThreadPool]: On create_smartflow_main_marts: COMMIT
+[0m16:09:35.235022 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m16:09:35.235351 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m16:09:35.235789 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m16:09:35.236310 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:09:35.236748 [debug] [ThreadPool]: On create_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_metrics"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_metrics"
+    
+[0m16:09:35.237158 [debug] [ThreadPool]: On create_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "create_smartflow_main_staging"} */
+
+    
+    
+        create schema if not exists "smartflow"."main_staging"
+    
+[0m16:09:35.237618 [debug] [ThreadPool]: On create_smartflow_main_marts: Close
+[0m16:09:35.238480 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:09:35.239198 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m16:09:35.239456 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:09:35.239782 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_metrics"
+[0m16:09:35.240671 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m16:09:35.241000 [debug] [ThreadPool]: On create_smartflow_main_metrics: COMMIT
+[0m16:09:35.241365 [debug] [ThreadPool]: Using duckdb connection "create_smartflow_main_staging"
+[0m16:09:35.241657 [debug] [ThreadPool]: On create_smartflow_main_staging: COMMIT
+[0m16:09:35.241955 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:09:35.242184 [debug] [ThreadPool]: On create_smartflow_main_staging: Close
+[0m16:09:35.242568 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:09:35.243076 [debug] [ThreadPool]: On create_smartflow_main_metrics: Close
+[0m16:09:35.244449 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_marts'
+[0m16:09:35.248498 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m16:09:35.248941 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_metrics'
+[0m16:09:35.249369 [debug] [ThreadPool]: On list_smartflow_main_marts: BEGIN
+[0m16:09:35.251301 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m16:09:35.251615 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_smartflow_main_staging'
+[0m16:09:35.251852 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:35.252313 [debug] [ThreadPool]: On list_smartflow_main_metrics: BEGIN
+[0m16:09:35.253980 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m16:09:35.254646 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:35.254869 [debug] [ThreadPool]: On list_smartflow_main_staging: BEGIN
+[0m16:09:35.255081 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m16:09:35.255414 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:35.255644 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:09:35.255878 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_marts"
+[0m16:09:35.256441 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_metrics"
+[0m16:09:35.256802 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:09:35.257045 [debug] [ThreadPool]: On list_smartflow_main_marts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_marts"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_marts'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m16:09:35.257429 [debug] [ThreadPool]: On list_smartflow_main_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_metrics"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_metrics'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m16:09:35.257671 [debug] [ThreadPool]: Using duckdb connection "list_smartflow_main_staging"
+[0m16:09:35.258880 [debug] [ThreadPool]: On list_smartflow_main_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "connection_name": "list_smartflow_main_staging"} */
+select
+      'smartflow' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_staging'
+    and lower(table_catalog) = 'smartflow'
+  
+[0m16:09:35.263687 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m16:09:35.264072 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m16:09:35.264473 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m16:09:35.265498 [debug] [ThreadPool]: On list_smartflow_main_metrics: ROLLBACK
+[0m16:09:35.266352 [debug] [ThreadPool]: On list_smartflow_main_staging: ROLLBACK
+[0m16:09:35.267208 [debug] [ThreadPool]: On list_smartflow_main_marts: ROLLBACK
+[0m16:09:35.268905 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_metrics'
+[0m16:09:35.269162 [debug] [ThreadPool]: On list_smartflow_main_metrics: Close
+[0m16:09:35.269639 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_marts'
+[0m16:09:35.270100 [debug] [ThreadPool]: Failed to rollback 'list_smartflow_main_staging'
+[0m16:09:35.270471 [debug] [ThreadPool]: On list_smartflow_main_marts: Close
+[0m16:09:35.270696 [debug] [ThreadPool]: On list_smartflow_main_staging: Close
+[0m16:09:35.271435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FFA50600>]}
+[0m16:09:35.271784 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:09:35.271966 [debug] [MainThread]: On master: BEGIN
+[0m16:09:35.272127 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:09:35.272615 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:09:35.272814 [debug] [MainThread]: On master: COMMIT
+[0m16:09:35.272982 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:09:35.273148 [debug] [MainThread]: On master: COMMIT
+[0m16:09:35.273555 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:09:35.273771 [debug] [MainThread]: On master: Close
+[0m16:09:35.279737 [debug] [Thread-1 (]: Began running node model.smartflow.stg_taxi_trips
+[0m16:09:35.280286 [info ] [Thread-1 (]: 1 of 3 START sql view model main_staging.stg_taxi_trips ........................ [RUN]
+[0m16:09:35.281060 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.smartflow.stg_taxi_trips'
+[0m16:09:35.281375 [debug] [Thread-1 (]: Began compiling node model.smartflow.stg_taxi_trips
+[0m16:09:35.288460 [debug] [Thread-1 (]: Writing injected SQL for node "model.smartflow.stg_taxi_trips"
+[0m16:09:35.290874 [debug] [Thread-1 (]: Began executing node model.smartflow.stg_taxi_trips
+[0m16:09:35.316432 [debug] [Thread-1 (]: Writing runtime sql for node "model.smartflow.stg_taxi_trips"
+[0m16:09:35.317857 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m16:09:35.318193 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: BEGIN
+[0m16:09:35.318437 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:09:35.319185 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:09:35.319551 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m16:09:35.319895 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+  
+  create view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" as (
+    
+
+with source as (
+    select * from "smartflow"."raw"."taxi_trips_mapped"
+),
+
+casted as (
+    select
+        cast(vendor_id            as integer)   as vendor_id,
+        cast(rate_code_id         as integer)   as rate_code_id,
+        cast(payment_type         as integer)   as payment_type,
+        cast(pickup_datetime      as timestamp) as pickup_datetime,
+        cast(dropoff_datetime     as timestamp) as dropoff_datetime,
+        cast(passenger_count      as integer)   as passenger_count,
+        cast(pickup_location_id   as integer)   as pickup_location_id,
+        cast(dropoff_location_id  as integer)   as dropoff_location_id,
+        cast(store_and_fwd_flag   as varchar)   as store_and_fwd_flag,
+        cast(fare_amount          as double)    as fare_amount,
+        cast(tip_amount           as double)    as tip_amount,
+        cast(total_amount         as double)    as total_amount,
+        cast(congestion_surcharge as double)    as congestion_surcharge,
+        cast(airport_fee          as double)    as airport_fee,
+        cast(trip_distance        as double)    as trip_distance
+    from source
+),
+
+enriched as (
+    select
+        vendor_id,
+        rate_code_id,
+        payment_type,
+        pickup_datetime,
+        dropoff_datetime,
+        passenger_count,
+        pickup_location_id,
+        dropoff_location_id,
+        store_and_fwd_flag,
+        fare_amount,
+        tip_amount,
+        total_amount,
+        congestion_surcharge,
+        airport_fee,
+        trip_distance,
+
+        -- derived time fields
+        round(datediff('minute', pickup_datetime, dropoff_datetime), 1) as trip_duration_mins,
+        extract(hour from pickup_datetime)                               as pickup_hour,
+        extract(dow  from pickup_datetime)                               as pickup_day_of_week,
+
+        case extract(dow from pickup_datetime)
+            when 0 then 'Sunday'   when 1 then 'Monday'
+            when 2 then 'Tuesday'  when 3 then 'Wednesday'
+            when 4 then 'Thursday' when 5 then 'Friday'
+            when 6 then 'Saturday'
+        end as pickup_day_name,
+
+        case
+            when extract(hour from pickup_datetime) between 6  and 11 then 'Morning'
+            when extract(hour from pickup_datetime) between 12 and 16 then 'Afternoon'
+            when extract(hour from pickup_datetime) between 17 and 20 then 'Evening'
+            else 'Night'
+        end as time_of_day,
+
+        -- labels
+        case vendor_id
+            when 1 then 'Creative Mobile Technologies'
+            when 2 then 'VeriFone Inc'
+            else        'Unknown Vendor'
+        end as vendor_name,
+
+        case payment_type
+            when 1 then 'Credit Card' when 2 then 'Cash'
+            when 3 then 'No Charge'   when 4 then 'Dispute'
+            else        'Unknown'
+        end as payment_type_label,
+
+        case rate_code_id
+            when 1 then 'Standard Rate'      when 2 then 'JFK'
+            when 3 then 'Newark'             when 4 then 'Nassau/Westchester'
+            when 5 then 'Negotiated Fare'    when 6 then 'Group Ride'
+            else        'Unknown Rate'
+        end as rate_code_label,
+
+        -- quality flags
+        case when fare_amount    < 0   then 1 else 0 end as flag_negative_fare,
+        case when total_amount   = 0   then 1 else 0 end as flag_zero_total,
+        case when trip_distance  > 500 then 1 else 0 end as flag_impossible_distance,
+        case when passenger_count is null
+              or passenger_count = 0  then 1 else 0 end as flag_bad_passenger_count,
+        case when payment_type   = 99  then 1 else 0 end as flag_unknown_payment,
+        case when dropoff_datetime <= pickup_datetime
+                                       then 1 else 0 end as flag_invalid_timestamps,
+
+        -- tip pct
+        case when fare_amount > 0
+             then round(tip_amount / fare_amount * 100, 2)
+             else null
+        end as tip_pct,
+
+        current_timestamp         as _loaded_at,
+        'raw.taxi_trips_mapped'   as _source_table
+
+    from casted
+),
+
+final as (
+    select
+        *,
+        -- composite anomaly flag
+        case when (
+            flag_negative_fare + flag_zero_total + flag_impossible_distance +
+            flag_bad_passenger_count + flag_unknown_payment + flag_invalid_timestamps
+        ) > 0 then 1 else 0 end as is_anomaly
+    from enriched
+    where not (
+        pickup_location_id = dropoff_location_id
+        and trip_duration_mins = 0
+        and fare_amount = 0
+    )
+)
+
+select * from final
+  );
+
+[0m16:09:35.324359 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m16:09:35.329509 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m16:09:35.329871 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+alter view "smartflow"."main_staging"."stg_taxi_trips__dbt_tmp" rename to "stg_taxi_trips"
+[0m16:09:35.330726 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:09:35.339519 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: COMMIT
+[0m16:09:35.339889 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m16:09:35.340121 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: COMMIT
+[0m16:09:35.343169 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:09:35.351009 [debug] [Thread-1 (]: Using duckdb connection "model.smartflow.stg_taxi_trips"
+[0m16:09:35.351364 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.stg_taxi_trips"} */
+
+      drop view if exists "smartflow"."main_staging"."stg_taxi_trips__dbt_backup" cascade
+    
+[0m16:09:35.352101 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:09:35.353862 [debug] [Thread-1 (]: On model.smartflow.stg_taxi_trips: Close
+[0m16:09:35.356021 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FE0F8AD0>]}
+[0m16:09:35.356744 [info ] [Thread-1 (]: 1 of 3 OK created sql view model main_staging.stg_taxi_trips ................... [[32mOK[0m in 0.07s]
+[0m16:09:35.357462 [debug] [Thread-1 (]: Finished running node model.smartflow.stg_taxi_trips
+[0m16:09:35.358132 [debug] [Thread-2 (]: Began running node model.smartflow.fct_trips
+[0m16:09:35.358539 [info ] [Thread-2 (]: 2 of 3 START sql table model main_marts.fct_trips .............................. [RUN]
+[0m16:09:35.359209 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.smartflow.fct_trips'
+[0m16:09:35.359522 [debug] [Thread-2 (]: Began compiling node model.smartflow.fct_trips
+[0m16:09:35.362701 [debug] [Thread-2 (]: Writing injected SQL for node "model.smartflow.fct_trips"
+[0m16:09:35.364189 [debug] [Thread-2 (]: Began executing node model.smartflow.fct_trips
+[0m16:09:35.380819 [debug] [Thread-2 (]: Writing runtime sql for node "model.smartflow.fct_trips"
+[0m16:09:35.382584 [debug] [Thread-2 (]: Using duckdb connection "model.smartflow.fct_trips"
+[0m16:09:35.383229 [debug] [Thread-2 (]: On model.smartflow.fct_trips: BEGIN
+[0m16:09:35.383620 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:09:35.384452 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m16:09:35.384983 [debug] [Thread-2 (]: Using duckdb connection "model.smartflow.fct_trips"
+[0m16:09:35.385362 [debug] [Thread-2 (]: On model.smartflow.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.fct_trips"} */
+
+  
+    
+    
+
+    create  table
+      "smartflow"."main_marts"."fct_trips__dbt_tmp"
+  
+    as (
+      
+
+/*
+  fct_trips
+  ─────────
+  Source : staging.stg_taxi_trips
+  Purpose: Analytics-ready fact table. Filters out anomalous rows,
+           adds business metrics, and structures data for BI queries
+           and the Streamlit dashboard.
+
+  What this model does:
+    1. Excludes anomalous rows (is_anomaly = 1) — clean data only
+    2. Adds revenue breakdown and speed metrics
+    3. Buckets trips by distance and fare for segment analysis
+    4. Adds surrogate trip_id for unique row identification
+    5. Retains all dimension keys for slicing (time, location, vendor)
+*/
+
+with
+
+staging as (
+    select * from "smartflow"."main_staging"."stg_taxi_trips"
+    where is_anomaly = 0           -- only clean rows into the mart
+      and trip_duration_mins > 0   -- valid trips only
+      and trip_distance      > 0
+      and fare_amount        > 0
+),
+
+with_metrics as (
+    select
+        -- ── Surrogate key ─────────────────────────────────────────────
+        row_number() over (
+            order by pickup_datetime, pickup_location_id
+        )                                               as trip_id,
+
+        -- ── Time dimensions ───────────────────────────────────────────
+        pickup_datetime,
+        dropoff_datetime,
+        pickup_hour,
+        pickup_day_of_week,
+        pickup_day_name,
+        time_of_day,
+        cast(pickup_datetime as date)                   as trip_date,
+        extract(month from pickup_datetime)             as trip_month,
+        extract(year  from pickup_datetime)             as trip_year,
+
+        -- ── Location dimensions ───────────────────────────────────────
+        pickup_location_id,
+        dropoff_location_id,
+        case
+            when pickup_location_id = dropoff_location_id then 'Same Zone'
+            else 'Cross Zone'
+        end                                             as trip_zone_type,
+
+        -- ── Vendor & payment dimensions ───────────────────────────────
+        vendor_id,
+        vendor_name,
+        payment_type,
+        payment_type_label,
+        rate_code_id,
+        rate_code_label,
+        passenger_count,
+
+        -- ── Core trip metrics ─────────────────────────────────────────
+        trip_distance,
+        trip_duration_mins,
+        round(
+            trip_distance / nullif(trip_duration_mins / 60.0, 0)
+        , 2)                                            as avg_speed_mph,
+
+        -- ── Revenue breakdown ─────────────────────────────────────────
+        fare_amount,
+        tip_amount,
+        coalesce(congestion_surcharge, 0)               as congestion_surcharge,
+        coalesce(airport_fee, 0)                        as airport_fee,
+        total_amount,
+        tip_pct,
+
+        round(
+            fare_amount / nullif(trip_duration_mins, 0)
+        , 2)                                            as revenue_per_min,
+
+        round(
+            fare_amount / nullif(trip_distance, 0)
+        , 2)                                            as revenue_per_mile,
+
+        -- ── Distance buckets ──────────────────────────────────────────
+        case
+            when trip_distance < 1    then 'Under 1 mile'
+            when trip_distance < 3    then '1–3 miles'
+            when trip_distance < 7    then '3–7 miles'
+            when trip_distance < 15   then '7–15 miles'
+            else                           '15+ miles'
+        end                                             as distance_bucket,
+
+        -- ── Fare buckets ──────────────────────────────────────────────
+        case
+            when fare_amount < 5      then 'Under $5'
+            when fare_amount < 15     then '$5–$15'
+            when fare_amount < 30     then '$15–$30'
+            when fare_amount < 60     then '$30–$60'
+            else                           '$60+'
+        end                                             as fare_bucket,
+
+        -- ── Duration buckets ──────────────────────────────────────────
+        case
+            when trip_duration_mins < 5   then 'Under 5 min'
+            when trip_duration_mins < 15  then '5–15 min'
+            when trip_duration_mins < 30  then '15–30 min'
+            when trip_duration_mins < 60  then '30–60 min'
+            else                               '60+ min'
+        end                                             as duration_bucket,
+
+        -- ── Tip behaviour ─────────────────────────────────────────────
+        case
+            when tip_amount  = 0          then 'No Tip'
+            when tip_pct    < 10          then 'Low (<10%)'
+            when tip_pct    < 20          then 'Standard (10–20%)'
+            else                               'Generous (20%+)'
+        end                                             as tip_category,
+
+        -- ── Airport flag ──────────────────────────────────────────────
+        case
+            when coalesce(airport_fee, 0) > 0 then 1
+            else 0
+        end                                             as is_airport_trip,
+
+        -- ── Metadata ──────────────────────────────────────────────────
+        _loaded_at,
+        _source_table
+
+    from staging
+)
+
+select * from with_metrics
+    );
+  
+  
+[0m16:09:35.493058 [debug] [Thread-2 (]: SQL status: OK in 0.107 seconds
+[0m16:09:35.495698 [debug] [Thread-2 (]: Using duckdb connection "model.smartflow.fct_trips"
+[0m16:09:35.495994 [debug] [Thread-2 (]: On model.smartflow.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.fct_trips"} */
+alter table "smartflow"."main_marts"."fct_trips__dbt_tmp" rename to "fct_trips"
+[0m16:09:35.496833 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m16:09:35.501365 [debug] [Thread-2 (]: On model.smartflow.fct_trips: COMMIT
+[0m16:09:35.501739 [debug] [Thread-2 (]: Using duckdb connection "model.smartflow.fct_trips"
+[0m16:09:35.501957 [debug] [Thread-2 (]: On model.smartflow.fct_trips: COMMIT
+[0m16:09:35.537002 [debug] [Thread-2 (]: SQL status: OK in 0.035 seconds
+[0m16:09:35.539487 [debug] [Thread-2 (]: Using duckdb connection "model.smartflow.fct_trips"
+[0m16:09:35.539833 [debug] [Thread-2 (]: On model.smartflow.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.fct_trips"} */
+
+      drop table if exists "smartflow"."main_marts"."fct_trips__dbt_backup" cascade
+    
+[0m16:09:35.540542 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m16:09:35.541611 [debug] [Thread-2 (]: On model.smartflow.fct_trips: Close
+[0m16:09:35.542093 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FE7468E0>]}
+[0m16:09:35.542587 [info ] [Thread-2 (]: 2 of 3 OK created sql table model main_marts.fct_trips ......................... [[32mOK[0m in 0.18s]
+[0m16:09:35.543428 [debug] [Thread-2 (]: Finished running node model.smartflow.fct_trips
+[0m16:09:35.544159 [debug] [Thread-3 (]: Began running node model.smartflow.daily_metrics
+[0m16:09:35.544552 [info ] [Thread-3 (]: 3 of 3 START sql table model main_metrics.daily_metrics ........................ [RUN]
+[0m16:09:35.545261 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.smartflow.daily_metrics'
+[0m16:09:35.545655 [debug] [Thread-3 (]: Began compiling node model.smartflow.daily_metrics
+[0m16:09:35.549224 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartflow.daily_metrics"
+[0m16:09:35.551015 [debug] [Thread-3 (]: Began executing node model.smartflow.daily_metrics
+[0m16:09:35.553065 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartflow.daily_metrics"
+[0m16:09:35.555544 [debug] [Thread-3 (]: Using duckdb connection "model.smartflow.daily_metrics"
+[0m16:09:35.556105 [debug] [Thread-3 (]: On model.smartflow.daily_metrics: BEGIN
+[0m16:09:35.556502 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:09:35.557574 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m16:09:35.558360 [debug] [Thread-3 (]: Using duckdb connection "model.smartflow.daily_metrics"
+[0m16:09:35.558742 [debug] [Thread-3 (]: On model.smartflow.daily_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.daily_metrics"} */
+
+  
+    
+    
+
+    create  table
+      "smartflow"."main_metrics"."daily_metrics__dbt_tmp"
+  
+    as (
+      
+
+/*
+  daily_metrics
+  ─────────────
+  Source : marts.fct_trips
+  Purpose: Pre-aggregated daily summaries for the Streamlit dashboard.
+           All heavy GROUP BY logic lives here so the dashboard
+           queries a small table instead of scanning 42k rows live.
+
+  Grain  : one row per trip_date (35 rows total for Jan 2024)
+*/
+
+with
+
+base as (
+    select * from "smartflow"."main_marts"."fct_trips"
+),
+
+-- ── Daily core metrics ────────────────────────────────────────────────────────
+daily as (
+    select
+        trip_date,
+        pickup_day_name,
+        pickup_day_of_week,
+
+        -- volume
+        count(*)                                        as total_trips,
+        sum(passenger_count)                            as total_passengers,
+        sum(is_airport_trip)                            as airport_trips,
+
+        -- revenue
+        round(sum(total_amount), 2)                     as total_revenue,
+        round(avg(total_amount), 2)                     as avg_revenue_per_trip,
+        round(sum(fare_amount),  2)                     as total_fare,
+        round(avg(fare_amount),  2)                     as avg_fare,
+        round(sum(tip_amount),   2)                     as total_tips,
+        round(avg(tip_pct),      1)                     as avg_tip_pct,
+        round(sum(congestion_surcharge), 2)             as total_congestion_surcharge,
+        round(sum(airport_fee), 2)                      as total_airport_fees,
+
+        -- trip characteristics
+        round(avg(trip_distance),      2)               as avg_distance_miles,
+        round(avg(trip_duration_mins), 1)               as avg_duration_mins,
+        round(avg(avg_speed_mph),      1)               as avg_speed_mph,
+        round(avg(revenue_per_mile),   2)               as avg_revenue_per_mile,
+        round(avg(revenue_per_min),    2)               as avg_revenue_per_min,
+
+        -- payment mix
+        round(
+            sum(case when payment_type_label = 'Credit Card' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_credit_card,
+        round(
+            sum(case when payment_type_label = 'Cash' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_cash,
+
+        -- tip behaviour
+        round(
+            sum(case when tip_category = 'Generous (20%+)' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_generous_tippers,
+        round(
+            sum(case when tip_category = 'No Tip' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_no_tip,
+
+        -- distance mix
+        round(
+            sum(case when distance_bucket = 'Under 1 mile' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_short_trips,
+        round(
+            sum(case when distance_bucket = '15+ miles' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_long_trips,
+
+        -- peak hours
+        mode() within group (order by pickup_hour)      as peak_hour,
+        max(pickup_hour)                                as latest_hour,
+        min(pickup_hour)                                as earliest_hour,
+
+        -- vendor split
+        round(
+            sum(case when vendor_name = 'VeriFone Inc' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_verifone,
+        round(
+            sum(case when vendor_name = 'Creative Mobile Technologies' then 1 else 0 end)
+            * 100.0 / count(*), 1
+        )                                               as pct_creative_mobile
+
+    from base
+    group by 1, 2, 3
+),
+
+-- ── 7-day rolling averages (for trend lines in dashboard) ────────────────────
+with_rolling as (
+    select
+        *,
+        round(avg(total_trips) over (
+            order by trip_date
+            rows between 6 preceding and current row
+        ), 0)                                           as trips_7day_avg,
+
+        round(avg(total_revenue) over (
+            order by trip_date
+            rows between 6 preceding and current row
+        ), 2)                                           as revenue_7day_avg,
+
+        round(avg(avg_fare) over (
+            order by trip_date
+            rows between 6 preceding and current row
+        ), 2)                                           as fare_7day_avg,
+
+        -- day-over-day revenue change
+        round(
+            total_revenue - lag(total_revenue) over (order by trip_date)
+        , 2)                                            as revenue_dod_change,
+
+        round(
+            (total_revenue - lag(total_revenue) over (order by trip_date))
+            * 100.0 / nullif(lag(total_revenue) over (order by trip_date), 0)
+        , 1)                                            as revenue_dod_pct_change,
+
+        -- cumulative revenue
+        round(sum(total_revenue) over (
+            order by trip_date
+        ), 2)                                           as cumulative_revenue
+
+    from daily
+)
+
+select * from with_rolling
+order by trip_date
+    );
+  
+  
+[0m16:09:35.599864 [debug] [Thread-3 (]: SQL status: OK in 0.041 seconds
+[0m16:09:35.602514 [debug] [Thread-3 (]: Using duckdb connection "model.smartflow.daily_metrics"
+[0m16:09:35.602964 [debug] [Thread-3 (]: On model.smartflow.daily_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.daily_metrics"} */
+alter table "smartflow"."main_metrics"."daily_metrics__dbt_tmp" rename to "daily_metrics"
+[0m16:09:35.603734 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m16:09:35.605003 [debug] [Thread-3 (]: On model.smartflow.daily_metrics: COMMIT
+[0m16:09:35.605342 [debug] [Thread-3 (]: Using duckdb connection "model.smartflow.daily_metrics"
+[0m16:09:35.605575 [debug] [Thread-3 (]: On model.smartflow.daily_metrics: COMMIT
+[0m16:09:35.608021 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m16:09:35.609785 [debug] [Thread-3 (]: Using duckdb connection "model.smartflow.daily_metrics"
+[0m16:09:35.610118 [debug] [Thread-3 (]: On model.smartflow.daily_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "smartflow", "target_name": "dev", "node_id": "model.smartflow.daily_metrics"} */
+
+      drop table if exists "smartflow"."main_metrics"."daily_metrics__dbt_backup" cascade
+    
+[0m16:09:35.610717 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m16:09:35.611925 [debug] [Thread-3 (]: On model.smartflow.daily_metrics: Close
+[0m16:09:35.612446 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed9c92cb-5e3f-4338-90e3-bc012ccfdc5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FE106670>]}
+[0m16:09:35.612963 [info ] [Thread-3 (]: 3 of 3 OK created sql table model main_metrics.daily_metrics ................... [[32mOK[0m in 0.07s]
+[0m16:09:35.613724 [debug] [Thread-3 (]: Finished running node model.smartflow.daily_metrics
+[0m16:09:35.615092 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:09:35.615384 [debug] [MainThread]: On master: BEGIN
+[0m16:09:35.615599 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:09:35.616148 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m16:09:35.616379 [debug] [MainThread]: On master: COMMIT
+[0m16:09:35.616811 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:09:35.617049 [debug] [MainThread]: On master: COMMIT
+[0m16:09:35.617531 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:09:35.617757 [debug] [MainThread]: On master: Close
+[0m16:09:35.618071 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:09:35.618258 [debug] [MainThread]: Connection 'create_smartflow_main_metrics' was properly closed.
+[0m16:09:35.618424 [debug] [MainThread]: Connection 'create_smartflow_main_marts' was properly closed.
+[0m16:09:35.618576 [debug] [MainThread]: Connection 'create_smartflow_main_staging' was properly closed.
+[0m16:09:35.618721 [debug] [MainThread]: Connection 'list_smartflow_main_marts' was properly closed.
+[0m16:09:35.618883 [debug] [MainThread]: Connection 'list_smartflow_main_metrics' was properly closed.
+[0m16:09:35.619117 [debug] [MainThread]: Connection 'list_smartflow_main_staging' was properly closed.
+[0m16:09:35.619275 [debug] [MainThread]: Connection 'model.smartflow.stg_taxi_trips' was properly closed.
+[0m16:09:35.619417 [debug] [MainThread]: Connection 'model.smartflow.fct_trips' was properly closed.
+[0m16:09:35.619578 [debug] [MainThread]: Connection 'model.smartflow.daily_metrics' was properly closed.
+[0m16:09:35.619839 [info ] [MainThread]: 
+[0m16:09:35.620541 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.53 seconds (0.53s).
+[0m16:09:35.621980 [debug] [MainThread]: Command end result
+[0m16:09:35.657009 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\manifest.json
+[0m16:09:35.659963 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\semantic_manifest.json
+[0m16:09:35.669220 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\varsh\OneDrive\Desktop\smartflow-etl\dbt_project\target\run_results.json
+[0m16:09:35.669739 [info ] [MainThread]: 
+[0m16:09:35.670291 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:09:35.670755 [info ] [MainThread]: 
+[0m16:09:35.671572 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m16:09:35.672749 [debug] [MainThread]: Command `dbt run` succeeded at 16:09:35.672604 after 1.81 seconds
+[0m16:09:35.673155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FA0B8A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7F9AC28D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7FDF81470>]}
+[0m16:09:35.673562 [debug] [MainThread]: Flushing usage events
+[0m16:09:36.897746 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Raw layer — AI schema-mapped taxi trip data"
+    tables:
+      - name: taxi_trips_mapped
+        description: "NYC taxi trips with canonical column names from AI schema mapper"
+        columns:
+          - name: pickup_datetime
+            description: "Trip pickup timestamp"
+          - name: dropoff_datetime
+            description: "Trip dropoff timestamp"
+          - name: passenger_count
+            description: "Number of passengers (nullable, sometimes 0)"
+          - name: trip_distance
+            description: "Trip distance in miles"
+          - name: fare_amount
+            description: "Base fare — can be negative (anomaly)"
+          - name: total_amount
+            description: "Total charge including all fees"
+          - name: payment_type
+            description: "Payment code: 1=CC, 2=Cash, 3=NoCharge, 4=Dispute, 99=Unknown"
+          - name: vendor_id
+            description: "Vendor: 1=Creative Mobile, 2=VeriFone"

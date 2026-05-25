@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: fct_trips
+    description: >
+      Analytics-ready fact table of clean NYC taxi trips.
+      Anomalous rows excluded. Includes revenue breakdown,
+      speed metrics, and bucketed dimensions for BI queries.
+
+    columns:
+      - name: trip_id
+        description: "Surrogate key — unique per row"
+        tests: [unique, not_null]
+
+      - name: pickup_datetime
+        description: "Trip start timestamp"
+        tests: [not_null]
+
+      - name: trip_date
+        description: "Date portion of pickup_datetime"
+        tests: [not_null]
+
+      - name: trip_distance
+        description: "Distance in miles — always > 0 in this model"
+        tests: [not_null]
+
+      - name: trip_duration_mins
+        description: "Duration in minutes — always > 0 in this model"
+        tests: [not_null]
+
+      - name: fare_amount
+        description: "Base fare — always > 0 in this model"
+        tests: [not_null]
+
+      - name: total_amount
+        description: "Total charge including all fees"
+        tests: [not_null]
+
+      - name: avg_speed_mph
+        description: "Computed: trip_distance / (duration_mins / 60)"
+
+      - name: revenue_per_min
+        description: "Fare efficiency metric: fare / duration"
+
+      - name: revenue_per_mile
+        description: "Fare efficiency metric: fare / distance"
+
+      - name: distance_bucket
+        description: "Distance segment label"
+        tests:
+          - accepted_values:
+              values: ['Under 1 mile','1–3 miles','3–7 miles','7–15 miles','15+ miles']
+
+      - name: fare_bucket
+        description: "Fare segment label"
+        tests:
+          - accepted_values:
+              values: ['Under $5','$5–$15','$15–$30','$30–$60','$60+']
+
+      - name: tip_category
+        description: "Tip behaviour label"
+        tests:
+          - accepted_values:
+              values: ['No Tip','Low (<10%)','Standard (10–20%)','Generous (20%+)']
+
+      - name: is_airport_trip
+        description: "1 if airport fee was charged"
+        tests:
+          - accepted_values:
+              values: [0, 1]
+
+      - name: trip_zone_type
+        description: "Same Zone or Cross Zone trip"
+        tests:
+          - accepted_values:
+              values: ['Same Zone','Cross Zone']

@@ -1,0 +1,62 @@
+{
+  "tpep_pickup_datetime": {
+    "canonical": "pickup_datetime",
+    "score": 0.5627
+  },
+  "tpep_dropoff_datetime": {
+    "canonical": "dropoff_datetime",
+    "score": 0.5901
+  },
+  "Passenger_Count": {
+    "canonical": "passenger_count",
+    "score": 0.6263
+  },
+  "TRIP_DISTANCE": {
+    "canonical": "trip_distance",
+    "score": 0.8316
+  },
+  "PULocationID": {
+    "canonical": "pickup_location_id",
+    "score": 0.3977
+  },
+  "DOLocationID": {
+    "canonical": "dropoff_location_id",
+    "score": 0.3917
+  },
+  "payment_type": {
+    "canonical": "payment_type",
+    "score": 0.706
+  },
+  "fare_amount": {
+    "canonical": "fare_amount",
+    "score": 0.7844
+  },
+  "tip_amount": {
+    "canonical": "tip_amount",
+    "score": 0.6965
+  },
+  "total_amount": {
+    "canonical": "total_amount",
+    "score": 0.7044
+  },
+  "VendorID": {
+    "canonical": "vendor_id",
+    "score": 0.4773
+  },
+  "RatecodeID": {
+    "canonical": "rate_code_id",
+    "score": 0.4471
+  },
+  "store_and_fwd_flag": {
+    "canonical": "store_and_fwd_flag",
+    "score": 0.5567
+  },
+  "congestion_surcharge": {
+    "canonical": "congestion_surcharge",
+    "score": 0.8879
+  },
+  "Airport_fee": {
+    "canonical": "airport_fee",
+    "score": 0.7995
+  }
+}

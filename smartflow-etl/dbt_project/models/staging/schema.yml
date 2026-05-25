@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: stg_taxi_trips
+    description: >
+      Cleaned and enriched NYC taxi trips. Adds derived time fields,
+      human-readable labels, and data quality flags. Anomalous rows
+      are flagged (is_anomaly=1) but kept — the anomaly detector
+      routes them to quarantine downstream.
+
+    columns:
+      - name: pickup_datetime
+        description: "Trip start timestamp"
+        tests: [not_null]
+
+      - name: dropoff_datetime
+        description: "Trip end timestamp"
+        tests: [not_null]
+
+      - name: trip_duration_mins
+        description: "Computed duration in minutes"
+        tests: [not_null]
+
+      - name: trip_distance
+        description: "Distance in miles"
+
+      - name: fare_amount
+        description: "Base fare — negative values flagged"
+
+      - name: total_amount
+        description: "Total charge"
+
+      - name: passenger_count
+        description: "Passenger count — nulls and zeros flagged"
+
+      - name: payment_type_label
+        description: "Human-readable payment method"
+        tests:
+          - accepted_values:
+              values: ['Credit Card', 'Cash', 'No Charge', 'Dispute', 'Unknown']
+
+      - name: vendor_name
+        description: "Human-readable vendor name"
+        tests:
+          - accepted_values:
+              values: ['Creative Mobile Technologies', 'VeriFone Inc', 'Unknown Vendor']
+
+      - name: time_of_day
+        description: "Morning / Afternoon / Evening / Night bucket"
+        tests:
+          - accepted_values:
+              values: ['Morning', 'Afternoon', 'Evening', 'Night']
+
+      - name: is_anomaly
+        description: "1 if any quality flag is set, 0 otherwise"
+        tests:
+          - accepted_values:
+              values: [0, 1]
+
+      - name: _loaded_at
+        description: "Timestamp this record was processed by dbt"
+        tests: [not_null]

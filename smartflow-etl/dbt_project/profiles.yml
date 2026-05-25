@@ -1,0 +1,7 @@
+smartflow:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../data/smartflow.duckdb"
+      threads: 4

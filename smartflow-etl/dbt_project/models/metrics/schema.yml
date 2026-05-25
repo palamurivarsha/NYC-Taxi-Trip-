@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: daily_metrics
+    description: >
+      Pre-aggregated daily trip metrics for the Streamlit dashboard.
+      One row per day. Includes revenue, volume, tip behaviour,
+      payment mix, distance mix, and 7-day rolling averages.
+
+    columns:
+      - name: trip_date
+        description: "Date of trips — grain of this model"
+        tests: [unique, not_null]
+
+      - name: total_trips
+        description: "Count of clean trips on this day"
+        tests: [not_null]
+
+      - name: total_revenue
+        description: "Sum of total_amount for the day"
+        tests: [not_null]
+
+      - name: avg_fare
+        description: "Average base fare for the day"
+        tests: [not_null]
+
+      - name: trips_7day_avg
+        description: "7-day rolling average of trip count"
+
+      - name: revenue_7day_avg
+        description: "7-day rolling average of daily revenue"
+
+      - name: revenue_dod_change
+        description: "Day-over-day revenue change in dollars"
+
+      - name: revenue_dod_pct_change
+        description: "Day-over-day revenue change as a percentage"
+
+      - name: cumulative_revenue
+        description: "Running total revenue from start of dataset"
+
+      - name: peak_hour
+        description: "Most common pickup hour of the day"
+
+      - name: pct_credit_card
+        description: "Percentage of trips paid by credit card"
+
+      - name: pct_generous_tippers
+        description: "Percentage of trips with tip >= 20%"

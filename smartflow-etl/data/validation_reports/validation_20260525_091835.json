@@ -1,0 +1,86 @@
+[
+  {
+    "expectation": "min_row_count",
+    "description": "Table has at least 40,000 rows",
+    "status": "PASS",
+    "detail": "47,049 rows",
+    "run_at": "2026-05-25T09:18:35.007219"
+  },
+  {
+    "expectation": "fare_amount_positive",
+    "description": "fare_amount is always > 0",
+    "status": "PASS",
+    "detail": "0 violations",
+    "run_at": "2026-05-25T09:18:35.011272"
+  },
+  {
+    "expectation": "fare_amount_range",
+    "description": "fare_amount between $0.50 and $500",
+    "status": "PASS",
+    "detail": "0 violations",
+    "run_at": "2026-05-25T09:18:35.015291"
+  },
+  {
+    "expectation": "trip_distance_positive",
+    "description": "trip_distance is always > 0",
+    "status": "PASS",
+    "detail": "0 violations",
+    "run_at": "2026-05-25T09:18:35.018714"
+  },
+  {
+    "expectation": "trip_distance_realistic",
+    "description": "trip_distance under 100 miles",
+    "status": "PASS",
+    "detail": "0 violations",
+    "run_at": "2026-05-25T09:18:35.026245"
+  },
+  {
+    "expectation": "passenger_count_valid",
+    "description": "passenger_count between 1 and 6",
+    "status": "PASS",
+    "detail": "0 violations",
+    "run_at": "2026-05-25T09:18:35.030080"
+  },
+  {
+    "expectation": "no_null_fare",
+    "description": "fare_amount has no nulls",
+    "status": "PASS",
+    "detail": "0 nulls",
+    "run_at": "2026-05-25T09:18:35.033409"
+  },
+  {
+    "expectation": "no_null_distance",
+    "description": "trip_distance has no nulls",
+    "status": "PASS",
+    "detail": "0 nulls",
+    "run_at": "2026-05-25T09:18:35.036181"
+  },
+  {
+    "expectation": "payment_type_known",
+    "description": "payment_type has no unknown (99) values",
+    "status": "PASS",
+    "detail": "0 unknown payments",
+    "run_at": "2026-05-25T09:18:35.037693"
+  },
+  {
+    "expectation": "total_amount_positive",
+    "description": "total_amount is always > 0",
+    "status": "PASS",
+    "detail": "0 violations",
+    "run_at": "2026-05-25T09:18:35.038961"
+  },
+  {
+    "expectation": "tip_non_negative",
+    "description": "tip_amount >= 0",
+    "status": "PASS",
+    "detail": "0 violations",
+    "run_at": "2026-05-25T09:18:35.041362"
+  },
+  {
+    "expectation": "null_rate_passenger",
+    "description": "passenger_count null rate < 5%",
+    "status": "PASS",
+    "detail": "0.0% nulls",
+    "run_at": "2026-05-25T09:18:35.043751"
+  }
+]
