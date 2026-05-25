@@ -44,3 +44,20 @@ Wrote sources.yml declaring the raw DuckDB source, and schema.yml with column-le
 <img width="489" height="242" alt="image" src="https://github.com/user-attachments/assets/4298fa9a-cf66-475e-ae9c-b25ba30083cb" />
 <img width="1907" height="934" alt="image" src="https://github.com/user-attachments/assets/daf9a39b-e124-4beb-8a00-3a04822c2b12" />
 <img width="1907" height="891" alt="image" src="https://github.com/user-attachments/assets/c0144a7a-c7e4-40d0-9bec-8d057b31d181" />
+Traditional ETL vs SmartFlow ETL — what actually changed
+
+Everyone talks about "modern data pipelines." Here's what that actually means in practice, step by step 👇
+Traditional ETL — how most pipelines still work:
+❌ Schema mapping = a human manually writes source.TRIP_DISTANCE → target.trip_distance for every field. When the source changes, it breaks. Someone gets paged at 2am.
+❌ Data cleaning = hundreds of if/else rules. IF fare < 0 THEN drop. IF passenger_count IS NULL THEN set to 1. Brittle. Misses edge cases. Never complete.
+❌ Bad data = gets silently dropped or worse, loads into the warehouse and corrupts dashboards. Nobody notices until a VP asks a question.
+❌ Transformations = someone runs a SQL script manually. Or a cron job that fails silently. No lineage, no tests, no documentation.
+❌ Orchestration = a spreadsheet saying "run script A before script B." Or pray.
+❌ Dashboard = refreshes once a day. Built by a different team. Takes 3 weeks to add a new metric.
+SmartFlow ETL — what we built instead:
+✅ Schema mapping → ML model reads column names and maps them automatically using cosine similarity. TRIP_DISTANCE, trip_dist, TripDistance — it figures them out. Zero hardcoded rules.
+✅ Data cleaning → KNN imputer fills nulls by looking at similar rows. IsolationForest catches outliers a human would never think to rule for. Catches what rules miss.
+✅ Bad data → never deleted. Flagged with a reason (zscore_only, isolation_forest_only, both_detectors) and routed to a quarantine folder. Fully auditable.
+✅ Transformations → dbt with 3 tested layers. Staging → Facts → Metrics. 26 automated tests. Full lineage. If a test fails, the pipeline stops.
+✅ Orchestration → Dagster. Every step is an asset with dependencies. One fails → downstream skips → you see exactly why in a UI.
+✅ Dashboard → Streamlit reading directly from DuckDB. KPIs, trends, anomaly waterfall, payment mix — all live.
