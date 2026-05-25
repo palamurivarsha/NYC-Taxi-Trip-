@@ -64,6 +64,7 @@ SmartFlow ETL — what we built instead:
 ✅ Dashboard → Streamlit reading directly from DuckDB. KPIs, trends, anomaly waterfall, payment mix — all live.
 
 Complete Setup — SmartFlow ETL
+
 Step 1 — Install Python 3.12
 You have Python 3.14 which breaks dbt. Download 3.12 from:
 https://www.python.org/downloads/release/python-3129/
@@ -92,7 +93,9 @@ dbt --version
 
 Step 9 — Run the pipeline in order
 Every time you start fresh — run these one by one:
-powershell# 1. Generate dataset + load into DuckDB
+powershell
+
+# 1. Generate dataset + load into DuckDB
 python ingestion/generate_dataset.py
 
 # 2. AI schema mapping
