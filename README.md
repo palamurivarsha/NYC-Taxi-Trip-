@@ -1,9 +1,6 @@
 # NYC-Taxi-Trip-
 AI-Powered Modern Data Engineering Pipeline
 
-<img width="1472" height="1480" alt="image" src="https://github.com/user-attachments/assets/70b80823-5aae-4274-ad1d-e0c9631dc06c" />
-
-
 1. pip install duckdb pandas pyarrow
 working principle:
 1. PATHS       — finds smartflow.duckdb automatically, no matter
