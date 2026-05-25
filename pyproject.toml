@@ -1,0 +1,30 @@
+[project]
+name = "smartflow-etl"
+version = "0.1.0"
+description = "AI-Powered ETL pipeline on NYC Taxi data"
+requires-python = ">=3.10,<3.14"
+
+dependencies = [
+    "duckdb>=1.1.3",
+    "dbt-core>=1.8.0",
+    "dbt-duckdb>=1.8.0",
+    "dagster>=1.8.0",
+    "dagster-webserver>=1.8.0",
+    "dagster-dbt>=0.24.0",
+    "pandas>=2.2.2",
+    "pyarrow>=16.1.0",
+    "requests>=2.32.3",
+    "scikit-learn>=1.5.1",
+    "scipy>=1.14.0",
+    "numpy>=1.26.4",
+    "streamlit>=1.37.0",
+    "plotly>=5.23.0",
+    "loguru>=0.7.2",
+    "python-dotenv>=1.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+]
