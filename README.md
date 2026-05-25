@@ -42,3 +42,5 @@ _loaded_at and _source_table metadata columns for lineage tracking
 Wrote sources.yml declaring the raw DuckDB source, and schema.yml with column-level documentation and 8 dbt tests — all 8 passing on first run.
 
 <img width="489" height="242" alt="image" src="https://github.com/user-attachments/assets/4298fa9a-cf66-475e-ae9c-b25ba30083cb" />
+<img width="1907" height="934" alt="image" src="https://github.com/user-attachments/assets/daf9a39b-e124-4beb-8a00-3a04822c2b12" />
+<img width="1907" height="891" alt="image" src="https://github.com/user-attachments/assets/c0144a7a-c7e4-40d0-9bec-8d057b31d181" />
